@@ -59,7 +59,7 @@ msgstr ""
 
 #: includes/admin/class-admin-page.php:61
 #: includes/admin/class-admin-page.php:154
-#: includes/knowledge/class-knowledge-base.php:66
+#: includes/knowledge/class-knowledge-base.php:65
 #: build/admin/admin.js:1297
 #: build/admin/admin.js:2437
 #: build/admin/admin.js:3477
@@ -892,36 +892,36 @@ msgstr ""
 msgid "Your question isn't in the docs. Send it to the team and we'll reply by email."
 msgstr ""
 
-#: includes/knowledge/class-knowledge-base.php:197
+#: includes/knowledge/class-knowledge-base.php:196
 msgid "The title is not valid UTF-8 text."
 msgstr ""
 
-#: includes/knowledge/class-knowledge-base.php:201
+#: includes/knowledge/class-knowledge-base.php:200
 msgid "Give the entry a title."
 msgstr ""
 
 #. translators: %d: characters.
-#: includes/knowledge/class-knowledge-base.php:205
+#: includes/knowledge/class-knowledge-base.php:204
 msgid "The title can be at most %d characters."
 msgstr ""
 
-#: includes/knowledge/class-knowledge-base.php:208
+#: includes/knowledge/class-knowledge-base.php:207
 msgid "The text is not valid UTF-8. Save the file as UTF-8 and try again."
 msgstr ""
 
-#: includes/knowledge/class-knowledge-base.php:212
+#: includes/knowledge/class-knowledge-base.php:211
 msgid "The text is larger than 1 MB. Split it into smaller entries."
 msgstr ""
 
-#: includes/knowledge/class-knowledge-base.php:229
+#: includes/knowledge/class-knowledge-base.php:228
 msgid "The file name is too long."
 msgstr ""
 
-#: includes/knowledge/class-knowledge-base.php:321
+#: includes/knowledge/class-knowledge-base.php:320
 msgid "The entry could not be deleted."
 msgstr ""
 
-#: includes/knowledge/class-knowledge-base.php:655
+#: includes/knowledge/class-knowledge-base.php:654
 #: includes/rest/class-knowledge-controller.php:302
 msgid "There is no such entry."
 msgstr ""

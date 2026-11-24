@@ -102,7 +102,7 @@ test( 'the same with another admin colour scheme (Sunrise)', async ( { page } ) 
 	await check( page, 'sunrise' );
 } );
 
-// Every state, not only the first render (owner, after switching tabs on 21prods).
+// Every state, not only the first render (owner, after switching tabs on a local site).
 const tabNamed = ( page: Page, name: string ) => page.locator( '.tabs__tab', { hasText: name } );
 async function switchTo( page: Page, name: string ) {
 	const t = tabNamed( page, name );
