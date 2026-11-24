@@ -1,0 +1,20 @@
+{
+	"name": "21press/delta-assistant-tests",
+	"description": "Test dependencies for Delta Assistant. Kept apart from the plugin's composer.json so the release zip never carries them.",
+	"type": "project",
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"php": ">=8.2"
+	},
+	"require-dev": {
+		"brain/monkey": "^2.7",
+		"phpunit/phpunit": "^9.6",
+		"yoast/phpunit-polyfills": "^4.0"
+	},
+	"config": {
+		"platform": {
+			"php": "8.2"
+		},
+		"sort-packages": true
+	}
+}

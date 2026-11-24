@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sigma admin harness</title>
+<link rel="stylesheet" href="/build/admin/admin.css">
+<style>
+	/* A stand-in for the wp-admin page around the app. */
+	/* wp-admin's .screen-reader-text (common.css). */
+	.screen-reader-text { border: 0; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; word-wrap: normal !important; }
+	body { margin: 0; background: #f0f0f1; font: 13px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+	/* wp-admin's toolbar: fixed, 32 px (46 px on narrow screens), and the page starts below it. */
+	#wpadminbar { position: fixed; inset: 0 0 auto; height: 32px; background: #1d2327; z-index: 99999; }
+	html { padding-top: 32px; }
+	@media (max-width: 782px) { #wpadminbar { height: 46px; } html { padding-top: 46px; } }
+	.wrap { margin: 10px 20px 0 2px; }
+	@media (max-width: 782px) { .wrap { margin: 10px 12px 0; } }
+</style>
+</head>
+<body class="admin-bar">
+<div id="wpadminbar"></div>
+<div class="wrap"><div id="sigma-admin"><p>Loading…</p></div></div>
+<script src="/dev/harness.js"></script>
+<script>
+	// What wp-admin's common.js does at DOM ready (wp-admin/js/common.js): move every div.notice that isn't
+	// .inline to after the first .wrap h1/h2. The admin app's notices must stay put (they carry .inline).
+	addEventListener( 'DOMContentLoaded', () => setTimeout( () => {
+		const head = document.querySelector( '.wp-header-end' ) || document.querySelector( '.wrap h1, .wrap h2' );
+		if ( ! head ) return;
+		document.querySelectorAll( 'div.updated, div.error, div.notice' ).forEach( ( n ) => {
+			if ( ! n.matches( '.inline, .below-h2' ) ) head.after( n );
+		} );
+	}, 400 ) );
+</script>
+</body>
+</html>

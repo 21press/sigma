@@ -1,0 +1,3430 @@
+# Copyright (C) 2026 21press
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Sigma 0.2.5\n"
+"Report-Msgid-Bugs-To: https://github.com/21press/sigma/issues\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: sigma\n"
+
+#. Plugin Name of the plugin
+#: sigma.php
+#: includes/admin/class-admin-page.php:49
+#: includes/admin/class-admin-page.php:50
+#: includes/admin/class-admin-page.php:133
+#: includes/privacy/class-privacy.php:194
+#: includes/team/class-profile.php:67
+#: build/admin/admin.js:156
+#: build/admin/admin.js:2874
+msgid "Sigma"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: sigma.php
+msgid "https://github.com/21press/sigma"
+msgstr ""
+
+#. Description of the plugin
+#: sigma.php
+msgid "A chat box for your site: AI answers drawn only from your own docs and knowledge base, with links, and a \"talk to a person\" path that emails your support address."
+msgstr ""
+
+#. Author of the plugin
+#: sigma.php
+msgid "21press"
+msgstr ""
+
+#. Author URI of the plugin
+#: sigma.php
+msgid "https://21press.com"
+msgstr ""
+
+#: includes/admin/class-admin-page.php:58
+msgid "Sigma settings"
+msgstr ""
+
+#: includes/admin/class-admin-page.php:58
+#: includes/admin/class-admin-page.php:148
+#: includes/admin/class-admin-page.php:278
+#: build/admin/admin.js:2833
+#: build/admin/admin.js:4934
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/class-admin-page.php:61
+#: includes/admin/class-admin-page.php:154
+#: includes/knowledge/class-knowledge-base.php:66
+#: build/admin/admin.js:1297
+#: build/admin/admin.js:2437
+#: build/admin/admin.js:3477
+msgid "Knowledge"
+msgstr ""
+
+#: includes/admin/class-admin-page.php:65
+#: includes/admin/class-admin-page.php:158
+#: build/admin/admin.js:630
+#: build/admin/admin.js:897
+msgid "Conversations"
+msgstr ""
+
+#: includes/admin/class-admin-page.php:75
+msgid "Sorry, you are not allowed to manage these settings."
+msgstr ""
+
+#: includes/admin/class-admin-page.php:83
+msgid "This screen needs JavaScript."
+msgstr ""
+
+#: includes/admin/class-admin-page.php:144
+#: build/admin/admin.js:2697
+#: build/admin/admin.js:2928
+msgid "Chat box"
+msgstr ""
+
+#: includes/admin/class-admin-page.php:144
+#: build/admin/admin.js:2702
+msgid "AI agent"
+msgstr ""
+
+#: includes/admin/class-admin-page.php:144
+#: build/admin/admin.js:2707
+msgid "Human support"
+msgstr ""
+
+#: includes/admin/class-admin-page.php:148
+#: build/admin/admin.js:2836
+#: build/admin/admin.js:4937
+msgid "The chat box on your site: an AI agent that answers from your content, and your team for the rest."
+msgstr ""
+
+#: includes/admin/class-admin-page.php:150
+#: build/admin/admin.js:4956
+msgid "Loading settings"
+msgstr ""
+
+#: includes/admin/class-admin-page.php:154
+#: build/admin/admin.js:1300
+msgid "Notes the agent reads before it answers: prices, policies, how-tos. Write them in Markdown, or import .md files."
+msgstr ""
+
+#: includes/admin/class-admin-page.php:155
+#: build/admin/admin.js:1344
+msgid "Loading entries"
+msgstr ""
+
+#: includes/admin/class-admin-page.php:158
+msgid "Read-only transcripts."
+msgstr ""
+
+#: includes/admin/class-admin-page.php:159
+#: build/admin/admin.js:757
+msgid "Loading conversations"
+msgstr ""
+
+#. translators: %s: the command, "npm run build".
+#: includes/admin/class-admin-page.php:170
+msgid "This screen couldn't load. If you installed Sigma from git, run %s in the plugin folder; otherwise reinstall the plugin."
+msgstr ""
+
+#: includes/admin/class-build-check.php:93
+msgid "The build folder is missing or incomplete."
+msgstr ""
+
+#. translators: %s: the plugin's version.
+#: includes/admin/class-build-check.php:96
+msgid "They have no version stamp; the plugin is %s."
+msgstr ""
+
+#. translators: 1: the version (and commit) the files were built from, 2: the plugin's version.
+#: includes/admin/class-build-check.php:98
+msgid "They were built from %1$s; the plugin is %2$s."
+msgstr ""
+
+#: includes/admin/class-build-check.php:101
+msgid "The plugin's built files are out of date or missing, so Sigma's screens and chat box may not work."
+msgstr ""
+
+#: includes/admin/class-build-check.php:103
+msgid "If you installed Sigma from git, run <code>npm run build</code> in the plugin folder. Otherwise, reinstall the plugin from its release zip."
+msgstr ""
+
+#: includes/admin/class-notices.php:95
+msgid "Your bot is now called Sigma (it was Remy). You can change the name under AI agent → Identity."
+msgstr ""
+
+#. translators: %s: the plugin's version.
+#: includes/admin/class-notices.php:105
+msgid "The plugin's built files are out of date (they have no version stamp; the plugin is %s), so Sigma's screens and chat box may not work. If you installed Sigma from git, run `npm run build` in the plugin folder; otherwise reinstall the plugin from its release zip."
+msgstr ""
+
+#. translators: 1: the version (and commit) the files were built from, 2: the plugin's version.
+#: includes/admin/class-notices.php:107
+msgid "The plugin's built files are out of date (built from %1$s; the plugin is %2$s), so Sigma's screens and chat box may not work. If you installed Sigma from git, run `npm run build` in the plugin folder; otherwise reinstall the plugin from its release zip."
+msgstr ""
+
+#. translators: %s: list of constants, "OLD → NEW".
+#: includes/admin/class-notices.php:116
+msgid "Please rename these constants in wp-config.php: %s. The old names still work for now."
+msgstr ""
+
+#. translators: %d: failures in a row.
+#: includes/admin/class-notices.php:125
+msgid "The last %d emails failed to send."
+msgstr ""
+
+#: includes/admin/class-notices.php:128
+#: includes/mail/class-transport.php:270
+msgid "Check the mail settings"
+msgstr ""
+
+#. translators: %d: conversations.
+#: includes/admin/class-notices.php:140
+msgid "%d handoff email was not sent."
+msgid_plural "%d handoff emails were not sent."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-notices.php:143
+#: includes/mail/class-transport.php:280
+msgid "Open Conversations to retry"
+msgstr ""
+
+#. translators: %d: events this hour.
+#: includes/admin/class-notices.php:156
+msgid "Cloudflare Turnstile could not be reached %d time this hour. Messages to your team were still accepted, with a limit of 1 per hour per visitor."
+msgid_plural "Cloudflare Turnstile could not be reached %d times this hour. Messages to your team were still accepted, with a limit of 1 per hour per visitor."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-notices.php:166
+#: includes/security/class-turnstile.php:195
+msgid "Spam protection settings"
+msgstr ""
+
+#: includes/admin/class-notices.php:199
+msgid "No such notice."
+msgstr ""
+
+#: includes/ai/class-answerer.php:240
+msgid "There is no question to answer."
+msgstr ""
+
+#: includes/ai/class-answerer.php:268
+msgid "I can't help with that here. Would you like to talk to a human?"
+msgstr ""
+
+#: includes/ai/class-answerer.php:654
+msgid "The AI cannot answer right now. You can still reach the team."
+msgstr ""
+
+#: includes/ai/class-anthropic-provider.php:160
+#: includes/ai/class-anthropic-provider.php:232
+msgid "No Anthropic API key is set."
+msgstr ""
+
+#: includes/ai/class-anthropic-provider.php:332
+#: includes/ai/class-openai-provider.php:291
+msgid "The AI is not available right now."
+msgstr ""
+
+#: includes/ai/class-openai-provider.php:103
+#: includes/ai/class-openai-provider.php:171
+msgid "No OpenAI API key is set."
+msgstr ""
+
+#. translators: %s: list of constants, "OLD → NEW".
+#: includes/class-config.php:114
+msgid "Sigma: please rename these constants in wp-config.php: %s. The old names still work for now."
+msgstr ""
+
+#. translators: %s: the bot's name.
+#: includes/class-settings.php:192
+#: includes/class-widget-strings.php:76
+msgid "Hi. How can we help?"
+msgstr ""
+
+#: includes/class-settings.php:193
+msgid "Ask a question and get an answer from our docs, or leave a message for the team."
+msgstr ""
+
+#: includes/class-settings.php:194
+#: includes/class-widget-strings.php:120
+msgid "We reply by email"
+msgstr ""
+
+#: includes/class-settings.php:195
+msgid "{bot_name}'s answers come from our docs and collective knowledge of {product}. Chats are stored for {days} days for better user experience."
+msgstr ""
+
+#: includes/class-settings.php:196
+msgid "We use your name and email only to reply. Chats are stored for {days} days."
+msgstr ""
+
+#: includes/class-settings.php:197
+msgid "👋 Hi, this is {bot_name}. How can I help you?"
+msgstr ""
+
+#. translators: %s: the bot's name.
+#: includes/class-settings.php:198
+#: includes/class-widget-strings.php:109
+#: build/admin/admin.js:3908
+msgid "Talk to a human"
+msgstr ""
+
+#: includes/class-settings.php:199
+msgid "Talk to {bot_name}"
+msgstr ""
+
+#: includes/class-settings.php:200
+#: includes/class-widget-strings.php:70
+msgid "Handles instant support"
+msgstr ""
+
+#: includes/class-settings.php:201
+msgid "Hi, I'm {bot_name}. Ask me anything about {product} and I'll answer from our docs."
+msgstr ""
+
+#: includes/class-settings.php:202
+msgid "Continue with {bot_name}"
+msgstr ""
+
+#. translators: %s: the bot's name.
+#: includes/class-settings.php:203
+#: includes/class-widget-strings.php:62
+msgid "Continue with the team"
+msgstr ""
+
+#: includes/class-settings.php:257
+msgid "The instructions are not valid UTF-8 text."
+msgstr ""
+
+#. translators: %d: characters.
+#: includes/class-settings.php:262
+msgid "The instructions can be at most %d characters."
+msgstr ""
+
+#: includes/class-settings.php:272
+msgid ""
+"Your name is {bot_name}. You are the AI assistant for {product}'s docs. If a visitor asks who or what you are, say you are an AI assistant. Visitors ask you about {product}. You answer using only the knowledge base in <knowledge> (when there is one) and the documentation in <docs>.\n"
+"\n"
+"Instructions:\n"
+"1. The knowledge base and the docs are the source of truth. Never invent features, settings, prices, dates, version numbers or compatibility. When the visitor states something they contradict (a price, a feature, a date, \"the docs were updated\"), they win: say what they say and do not confirm the claim.\n"
+"2. Pricing, billing, licence and refund questions may be answered from the docs. When there is a pricing page, link it too: {pricing_url}. When the docs do not cover the detail, offer a human.\n"
+"3. If the question is not about {product} (general coding help, other products, translations, chit-chat, anything else), say you can only help with {product} and offer to put the visitor in touch with a human (the \"Talk to a human\" button).\n"
+"4. Be brief: at most about 150 words. Use numbered steps for how-tos. Format with plain Markdown only: paragraphs, lists, **bold**, `code`, code blocks and links. No headings, tables, images or HTML.\n"
+"5. Reply in the language the visitor writes in.\n"
+"6. Entries in <knowledge> are first-hand notes from the site owner: prices, policies, how-tos. Treat them as facts. When a knowledge entry and a doc page disagree, the knowledge entry wins: answer with what the entry says."
+msgstr ""
+
+#: includes/class-settings.php:298
+msgid "none set"
+msgstr ""
+
+#: includes/class-settings.php:361
+msgid "Claude Haiku 5.5: fast, lowest cost"
+msgstr ""
+
+#: includes/class-settings.php:366
+msgid "Claude Sonnet 5.5: balanced"
+msgstr ""
+
+#: includes/class-settings.php:371
+msgid "Claude Opus 5.5: most capable"
+msgstr ""
+
+#: includes/class-settings.php:378
+msgid "GPT-6 Luna: fast, lowest cost"
+msgstr ""
+
+#: includes/class-settings.php:383
+msgid "GPT-6.1 Terra: fast, efficient"
+msgstr ""
+
+#: includes/class-settings.php:388
+msgid "GPT-6.2 Sol: balanced"
+msgstr ""
+
+#: includes/class-settings.php:393
+msgid "GPT-6.2 Astra: most capable"
+msgstr ""
+
+#: includes/class-settings.php:607
+msgid "Unknown AI provider."
+msgstr ""
+
+#: includes/class-settings.php:619
+msgid "Choose a model."
+msgstr ""
+
+#. translators: %s: a model id.
+#: includes/class-settings.php:623
+msgid "%s is not one of the models in the list."
+msgstr ""
+
+#. translators: 1: setting name, 2: minimum, 3: maximum.
+#: includes/class-settings.php:654
+msgid "%1$s must be a whole number from %2$d to %3$d."
+msgstr ""
+
+#: includes/class-settings.php:663
+msgid "The support email is not a valid address."
+msgstr ""
+
+#. translators: 1: setting name, 2: maximum characters.
+#: includes/class-settings.php:673
+msgid "%1$s can be at most %2$d characters."
+msgstr ""
+
+#: includes/class-settings.php:682
+msgid "The bot avatar must be an image from the Media Library."
+msgstr ""
+
+#: includes/class-settings.php:691
+#: includes/class-settings.php:702
+msgid "A color is a hex value like #26292a."
+msgstr ""
+
+#. translators: 1: setting name, 2: allowed values.
+#: includes/class-settings.php:722
+msgid "%1$s must be one of: %2$s."
+msgstr ""
+
+#: includes/class-settings.php:730
+msgid "Upload an image for the bot icon, or choose one of the built-in icons."
+msgstr ""
+
+#: includes/class-settings.php:737
+msgid "Enter a full http(s) URL."
+msgstr ""
+
+#: includes/class-settings.php:747
+msgid "The bot name can be at most 30 characters."
+msgstr ""
+
+#: includes/class-settings.php:765
+msgid "Enter a host name like smtp.example.com, or an IP address."
+msgstr ""
+
+#: includes/class-settings.php:775
+msgid "The From email is not a valid address."
+msgstr ""
+
+#: includes/class-settings.php:797
+msgid "That does not look like a password."
+msgstr ""
+
+#: includes/class-settings.php:804
+msgid "SMTP needs a host."
+msgstr ""
+
+#: includes/class-settings.php:807
+msgid "SMTP needs a From email the server is allowed to send as."
+msgstr ""
+
+#: includes/class-settings.php:810
+msgid "With authentication on, enter the SMTP username."
+msgstr ""
+
+#: includes/class-settings.php:813
+msgid "The SMTP server or account changed: enter the password again."
+msgstr ""
+
+#: includes/class-settings.php:813
+msgid "With authentication on, enter the SMTP password (or define SIGMA_SMTP_PASSWORD with SIGMA_SMTP_HOST)."
+msgstr ""
+
+#: includes/class-settings.php:816
+msgid "A password is never sent without encryption. Choose STARTTLS or SSL, or switch authentication off."
+msgstr ""
+
+#: includes/class-settings.php:823
+msgid "A Turnstile site key starts with 0x (or 1x–3x for Cloudflare's test keys) and is 20 to 40 letters and digits."
+msgstr ""
+
+#: includes/class-settings.php:830
+msgid "That does not look like a Turnstile secret key."
+msgstr ""
+
+#: includes/class-settings.php:838
+msgid "Appearance is Auto, Light or Dark."
+msgstr ""
+
+#: includes/class-settings.php:845
+msgid "Add the Turnstile site key and secret key, and test them, before switching it on."
+msgstr ""
+
+#: includes/class-settings.php:856
+msgid "That does not look like an API key."
+msgstr ""
+
+#: includes/class-settings.php:944
+msgid "Port 465 usually means SSL (implicit TLS)."
+msgstr ""
+
+#: includes/class-settings.php:947
+msgid "Port 587 usually means STARTTLS."
+msgstr ""
+
+#: includes/class-settings.php:950
+msgid "Port 25 is blocked by many hosts and cloud providers. Use 587 with STARTTLS."
+msgstr ""
+
+#: includes/class-settings.php:953
+msgid "Another plugin replaces wp_mail(), so the built-in SMTP may be skipped. Use Send test email to see which path works, or switch to WordPress mail."
+msgstr ""
+
+#: includes/class-settings.php:956
+msgid "Without encryption the password crosses the network in the clear."
+msgstr ""
+
+#. translators: %s: From domain.
+#: includes/class-settings.php:964
+msgid "The From domain (%s) is neither the site's domain nor the SMTP account's. Unless its SPF and DKIM records allow this server, receivers may reject the email or file it as spam (DMARC)."
+msgstr ""
+
+#: includes/class-switch-over.php:153
+msgid "Sigma replaces Delta Assistant, so Delta Assistant was deactivated. Your settings, conversations and knowledge base carry over. You can now delete Delta Assistant: its keys and data stay with Sigma."
+msgstr ""
+
+#: includes/class-updater.php:359
+msgid "Sigma could not download the checksum of the update, so it was not installed. Try again later."
+msgstr ""
+
+#: includes/class-updater.php:363
+msgid "The checksum file of the Sigma update is not valid, so it was not installed."
+msgstr ""
+
+#: includes/class-updater.php:383
+msgid "The Sigma update could not be downloaded. Try again later."
+msgstr ""
+
+#: includes/class-updater.php:388
+msgid "The Sigma update does not match its published checksum, so it was not installed. Nothing on your site was changed."
+msgstr ""
+
+#: includes/class-updater.php:406
+msgid "Check for updates"
+msgstr ""
+
+#. translators: 1, 2: names.
+#: includes/class-widget-strings.php:46
+msgid "%1$s and %2$s"
+msgstr ""
+
+#. translators: 1, 2, 3: names.
+#: includes/class-widget-strings.php:47
+msgid "%1$s, %2$s and %3$s"
+msgstr ""
+
+#. translators: 1, 2: names, 3: how many more people.
+#: includes/class-widget-strings.php:48
+msgid "%1$s, %2$s and %3$s others"
+msgstr ""
+
+#. translators: %s: the bot's name.
+#: includes/class-widget-strings.php:49
+msgid "%s is busy, try again in a few seconds."
+msgstr ""
+
+#. translators: %s: the bot's name.
+#: includes/class-widget-strings.php:50
+msgid "👋 Hi, this is %s. How can I help you?"
+msgstr ""
+
+#. translators: %s: the bot's name.
+#: includes/class-widget-strings.php:51
+#: includes/mail/class-mailer.php:121
+#: build/admin/admin.js:955
+msgid "AI"
+msgstr ""
+
+#: includes/class-widget-strings.php:52
+msgid "Answers from our docs"
+msgstr ""
+
+#: includes/class-widget-strings.php:53
+msgid "Ask a follow-up"
+msgstr ""
+
+#: includes/class-widget-strings.php:54
+msgid "Ask a question"
+msgstr ""
+
+#: includes/class-widget-strings.php:55
+msgid "Ask something else"
+msgstr ""
+
+#: includes/class-widget-strings.php:56
+msgid "Assistant unavailable"
+msgstr ""
+
+#: includes/class-widget-strings.php:57
+#: build/admin/admin.js:2642
+msgid "Back"
+msgstr ""
+
+#: includes/class-widget-strings.php:58
+msgid "Back to start"
+msgstr ""
+
+#: includes/class-widget-strings.php:59
+msgid "Close help"
+msgstr ""
+
+#: includes/class-widget-strings.php:60
+msgid "Confirm you're a person to start the chat."
+msgstr ""
+
+#. translators: %s: the bot's name.
+#: includes/class-widget-strings.php:61
+msgid "Continue with %s"
+msgstr ""
+
+#: includes/class-widget-strings.php:63
+#: build/admin/admin.js:872
+#: build/admin/admin.js:936
+msgid "Conversation"
+msgstr ""
+
+#: includes/class-widget-strings.php:64
+msgid "Couldn't send your message. Check your connection and try again."
+msgstr ""
+
+#: includes/class-widget-strings.php:65
+msgid "Dictate your question"
+msgstr ""
+
+#: includes/class-widget-strings.php:66
+#: includes/privacy/class-privacy.php:133
+#: build/admin/admin.js:2581
+msgid "Email"
+msgstr ""
+
+#: includes/class-widget-strings.php:67
+msgid "Enter an email like name@example.com."
+msgstr ""
+
+#: includes/class-widget-strings.php:68
+msgid "Enter your name."
+msgstr ""
+
+#: includes/class-widget-strings.php:69
+msgid "From the docs"
+msgstr ""
+
+#: includes/class-widget-strings.php:71
+#: build/admin/admin.js:2691
+msgid "Help"
+msgstr ""
+
+#: includes/class-widget-strings.php:72
+msgid "Help could not load. Select to try again."
+msgstr ""
+
+#: includes/class-widget-strings.php:73
+msgid "Help couldn't load. Check your connection and try again."
+msgstr ""
+
+#: includes/class-widget-strings.php:74
+msgid "Help isn't available right now. Please try again later."
+msgstr ""
+
+#. translators: %s: the bot's name.
+#: includes/class-widget-strings.php:75
+msgid "Hi, I'm %s. Ask me anything and I'll answer from our docs."
+msgstr ""
+
+#: includes/class-widget-strings.php:77
+msgid "Keep your message under 2,000 characters."
+msgstr ""
+
+#: includes/class-widget-strings.php:78
+msgid "Leave a message and the team will reply by email."
+msgstr ""
+
+#: includes/class-widget-strings.php:79
+msgid "Leave your details and the team will reply by email."
+msgstr ""
+
+#: includes/class-widget-strings.php:80
+msgid "Listening… speak now"
+msgstr ""
+
+#: includes/class-widget-strings.php:81
+msgid "Loading help"
+msgstr ""
+
+#: includes/class-widget-strings.php:82
+msgid "Message"
+msgstr ""
+
+#: includes/class-widget-strings.php:83
+msgid "Message sent"
+msgstr ""
+
+#: includes/class-widget-strings.php:84
+msgid "Messages to the team are switched off right now. Please try again later."
+msgstr ""
+
+#: includes/class-widget-strings.php:85
+msgid "Microphone access is blocked. Allow it in your browser to dictate."
+msgstr ""
+
+#: includes/class-widget-strings.php:86
+#: includes/privacy/class-privacy.php:129
+#: build/admin/admin.js:2951
+#: build/admin/admin.js:3372
+#: build/admin/admin.js:4551
+msgid "Name"
+msgstr ""
+
+#: includes/class-widget-strings.php:87
+msgid "Need more than the docs? Send it to the team and we'll reply by email."
+msgstr ""
+
+#: includes/class-widget-strings.php:88
+msgid "New chat"
+msgstr ""
+
+#: includes/class-widget-strings.php:89
+msgid "Not finished."
+msgstr ""
+
+#: includes/class-widget-strings.php:90
+msgid "Not sent."
+msgstr ""
+
+#. translators: %s: the chat box's name.
+#: includes/class-widget-strings.php:91
+msgid "Open %s"
+msgstr ""
+
+#. translators: %s: the teaser text.
+#: includes/class-widget-strings.php:92
+msgid "Open chat: %s"
+msgstr ""
+
+#. translators: %s: the teaser text.
+#: includes/class-widget-strings.php:93
+msgid "Open help"
+msgstr ""
+
+#: includes/class-widget-strings.php:94
+#: includes/rest/class-visitor-controller.php:547
+msgid "Our inbox is busy, try again later."
+msgstr ""
+
+#: includes/class-widget-strings.php:95
+msgid "Please complete the security check above."
+msgstr ""
+
+#: includes/class-widget-strings.php:96
+msgid "Please try again later."
+msgstr ""
+
+#: includes/class-widget-strings.php:97
+msgid "Privacy"
+msgstr ""
+
+#: includes/class-widget-strings.php:98
+msgid "Quick check"
+msgstr ""
+
+#: includes/class-widget-strings.php:99
+msgid "Send"
+msgstr ""
+
+#: includes/class-widget-strings.php:100
+msgid "Send message"
+msgstr ""
+
+#: includes/class-widget-strings.php:101
+msgid "Send your question to the team and we'll reply by email."
+msgstr ""
+
+#: includes/class-widget-strings.php:102
+#: build/admin/admin.js:842
+#: build/admin/admin.js:4582
+msgid "Sending…"
+msgstr ""
+
+#. translators: %s: the bot's name.
+#: includes/class-widget-strings.php:103
+msgid "Start a new chat with %s"
+msgstr ""
+
+#. translators: %s: the bot's name.
+#: includes/class-widget-strings.php:104
+msgid "Still reading the docs…"
+msgstr ""
+
+#: includes/class-widget-strings.php:105
+msgid "Stop dictation"
+msgstr ""
+
+#: includes/class-widget-strings.php:106
+msgid "Stopped"
+msgstr ""
+
+#: includes/class-widget-strings.php:107
+#: includes/mail/class-mailer.php:121
+#: includes/team/class-team.php:107
+#: build/admin/admin.js:1063
+msgid "Support"
+msgstr ""
+
+#. translators: %s: the bot's name.
+#: includes/class-widget-strings.php:108
+msgid "Talk to %s"
+msgstr ""
+
+#: includes/class-widget-strings.php:110
+msgid "Talk to a human?"
+msgstr ""
+
+#. translators: %s: list of names.
+#: includes/class-widget-strings.php:111
+msgid "Talk to a human. Team: %s"
+msgstr ""
+
+#. translators: %s: list of names.
+#: includes/class-widget-strings.php:112
+msgid "The assistant is unavailable right now"
+msgstr ""
+
+#: includes/class-widget-strings.php:113
+msgid "The assistant is writing an answer"
+msgstr ""
+
+#: includes/class-widget-strings.php:114
+msgid "The security check couldn't load. You can still send your message."
+msgstr ""
+
+#: includes/class-widget-strings.php:115
+msgid "The security check didn't go through. Please try it again."
+msgstr ""
+
+#: includes/class-widget-strings.php:116
+msgid "This is a preview, so nothing was sent. On your site, the agent answers from your content here."
+msgstr ""
+
+#: includes/class-widget-strings.php:117
+msgid "Too many messages from this connection. Try again in an hour."
+msgstr ""
+
+#: includes/class-widget-strings.php:118
+#: build/admin/admin.js:359
+msgid "Try again"
+msgstr ""
+
+#: includes/class-widget-strings.php:119
+msgid "Usually answers in seconds"
+msgstr ""
+
+#: includes/class-widget-strings.php:121
+msgid "We'll include your chat with the assistant, so you don't have to repeat it."
+msgstr ""
+
+#. translators: %s: the visitor's email address.
+#: includes/class-widget-strings.php:122
+msgid "We'll reply to %s by email."
+msgstr ""
+
+#. translators: %s: the visitor's email address.
+#: includes/class-widget-strings.php:123
+msgid "Website"
+msgstr ""
+
+#: includes/class-widget-strings.php:124
+msgid "Write a message."
+msgstr ""
+
+#. translators: %s: minutes.
+#: includes/class-widget-strings.php:125
+msgid "You can ask again in %s min"
+msgstr ""
+
+#. translators: %s: minutes (2 or more).
+#: includes/class-widget-strings.php:126
+msgid "You can ask again in about %s minutes. A person can help now."
+msgstr ""
+
+#. translators: %s: minutes (2 or more).
+#: includes/class-widget-strings.php:127
+msgid "You can ask again in about 1 minute. A person can help now."
+msgstr ""
+
+#: includes/class-widget-strings.php:128
+msgid "You can ask again in about an hour"
+msgstr ""
+
+#: includes/class-widget-strings.php:129
+msgid "You can ask again in about an hour. A person can help now."
+msgstr ""
+
+#: includes/class-widget-strings.php:130
+msgid "You can ask again tomorrow"
+msgstr ""
+
+#: includes/class-widget-strings.php:131
+msgid "You can ask again tomorrow. A person can help now."
+msgstr ""
+
+#: includes/class-widget-strings.php:132
+msgid "You can still reach a person. We'll reply by email."
+msgstr ""
+
+#: includes/class-widget-strings.php:133
+msgid "You:"
+msgstr ""
+
+#: includes/class-widget-strings.php:134
+msgid "You've reached the question limit"
+msgstr ""
+
+#: includes/class-widget-strings.php:135
+msgid "Your question isn't in the docs. Send it to the team and we'll reply by email."
+msgstr ""
+
+#: includes/knowledge/class-knowledge-base.php:197
+msgid "The title is not valid UTF-8 text."
+msgstr ""
+
+#: includes/knowledge/class-knowledge-base.php:201
+msgid "Give the entry a title."
+msgstr ""
+
+#. translators: %d: characters.
+#: includes/knowledge/class-knowledge-base.php:205
+msgid "The title can be at most %d characters."
+msgstr ""
+
+#: includes/knowledge/class-knowledge-base.php:208
+msgid "The text is not valid UTF-8. Save the file as UTF-8 and try again."
+msgstr ""
+
+#: includes/knowledge/class-knowledge-base.php:212
+msgid "The text is larger than 1 MB. Split it into smaller entries."
+msgstr ""
+
+#: includes/knowledge/class-knowledge-base.php:229
+msgid "The file name is too long."
+msgstr ""
+
+#: includes/knowledge/class-knowledge-base.php:321
+msgid "The entry could not be deleted."
+msgstr ""
+
+#: includes/knowledge/class-knowledge-base.php:655
+#: includes/rest/class-knowledge-controller.php:302
+msgid "There is no such entry."
+msgstr ""
+
+#. translators: 1: brand, 2: visitor name.
+#: includes/mail/class-mailer.php:37
+msgid "[%1$s] Help request from %2$s"
+msgstr ""
+
+#. translators: %s: brand.
+#: includes/mail/class-mailer.php:50
+msgid "[%s] Test email from Sigma"
+msgstr ""
+
+#: includes/mail/class-mailer.php:51
+msgid "This is a test of the email path that help requests use. If you can read it, handoffs will reach this address."
+msgstr ""
+
+#. translators: %s: page URL.
+#: includes/mail/class-mailer.php:110
+msgid "Page: %s"
+msgstr ""
+
+#. translators: %s: wp-admin URL of the conversation.
+#: includes/mail/class-mailer.php:112
+msgid "Conversation: %s"
+msgstr ""
+
+#: includes/mail/class-mailer.php:113
+msgid "Reply to this email to answer the visitor."
+msgstr ""
+
+#: includes/mail/class-mailer.php:121
+#: build/admin/admin.js:735
+#: build/admin/admin.js:1010
+#: build/admin/admin.js:1061
+msgid "Visitor"
+msgstr ""
+
+#: includes/mail/class-mailer.php:128
+msgid "Chat before the handoff:"
+msgstr ""
+
+#. translators: 1: port, 2: allowed ports.
+#: includes/mail/class-smtp-check.php:52
+msgid "Port %1$d is not an SMTP port this test uses (%2$s)."
+msgstr ""
+
+#. translators: %s: an IP address.
+#: includes/mail/class-smtp-check.php:63
+msgid "%s is a private or reserved address. The test only connects to public mail servers."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:67
+msgid "A password is never sent without encryption. Choose STARTTLS or SSL."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:99
+msgid "Not run: an earlier step failed."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:109
+msgid "The host name does not resolve. Check it for typos, for example smtp.example.com."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:117
+msgid "Use your mail provider's SMTP host on port 587 with STARTTLS, or 465 with SSL."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:149
+msgid "The TLS handshake or the greeting failed. If the certificate is the problem, use the host name the certificate is issued for. If the server expects STARTTLS, use port 587 with STARTTLS."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:150
+msgid "The server did not greet like an SMTP server. Port 465 needs SSL; 587 needs STARTTLS."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:159
+msgid "The server refused EHLO; check the host and port."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:167
+msgid "Implicit TLS on connect; the certificate was verified."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:170
+msgid "The server does not offer STARTTLS."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:170
+msgid "Use the port that offers STARTTLS (usually 587), or SSL on 465. Sending without encryption exposes the password."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:177
+msgid "The TLS handshake failed. Usually the certificate does not match the host name or is not trusted: use the host name on the certificate."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:183
+msgid "STARTTLS accepted; the certificate was verified."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:185
+msgid "Skipped: no encryption chosen."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:185
+msgid "The password would cross the network in the clear. Use STARTTLS (587) or SSL (465)."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:190
+msgid "Skipped: authentication is off."
+msgstr ""
+
+#: includes/mail/class-smtp-check.php:195
+msgid "The server refused the login. Check the username and password; many providers need an SMTP key or app password, not the account password."
+msgstr ""
+
+#. translators: %d: port.
+#: includes/mail/class-smtp-check.php:242
+msgid "Port %d timed out. Many hosts block it (Hetzner, for example, blocks 25 and 465 by default); try 587 with STARTTLS."
+msgstr ""
+
+#. translators: 1: host, 2: port.
+#: includes/mail/class-smtp-check.php:246
+msgid "No answer from %1$s:%2$d within 10 seconds. A firewall may block the port, or the host name is wrong."
+msgstr ""
+
+#. translators: 1: host, 2: port.
+#: includes/mail/class-smtp-check.php:249
+msgid "Nothing accepts connections on %1$s:%2$d. Check the port: 587 for STARTTLS, 465 for SSL."
+msgstr ""
+
+#: includes/mail/class-transport.php:89
+msgid "wp_mail() returned false without an error message."
+msgstr ""
+
+#. translators: %d: failures in a row.
+#: includes/mail/class-transport.php:268
+msgid "Sigma: the last %d emails failed to send."
+msgstr ""
+
+#. translators: %d: conversations.
+#: includes/mail/class-transport.php:278
+msgid "Sigma: %d handoff email was not sent."
+msgid_plural "Sigma: %d handoff emails were not sent."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/privacy/class-privacy.php:81
+#: includes/privacy/class-privacy.php:95
+msgid "Sigma chats"
+msgstr ""
+
+#: includes/privacy/class-privacy.php:125
+msgid "Help chats"
+msgstr ""
+
+#: includes/privacy/class-privacy.php:137
+#: build/admin/admin.js:1027
+msgid "Started"
+msgstr ""
+
+#: includes/privacy/class-privacy.php:141
+#: build/admin/admin.js:1018
+msgid "Page"
+msgstr ""
+
+#: includes/privacy/class-privacy.php:145
+msgid "Transcript"
+msgstr ""
+
+#. translators: 1: AI provider, 2: days.
+#: includes/privacy/class-privacy.php:190
+msgid "Our help chat answers questions with AI using our public documentation. The text you type in the chat is sent to %1$s, which processes it on our behalf to write an answer; your name and email are not sent to them. Chats are stored on this site for %2$d days after the last message, then deleted."
+msgstr ""
+
+#: includes/privacy/class-privacy.php:193
+msgid "You can dictate a question instead of typing it. Your browser turns your speech into text; in some browsers (such as Chrome and Edge) the audio is sent to the browser maker's speech service (Google or Microsoft) for this. This site never receives the audio, only the text you choose to send."
+msgstr ""
+
+#: includes/privacy/class-privacy.php:193
+msgid "If you ask to talk to a human, we store your name and email with the chat and email the conversation to our support team, who reply to you by email. You can ask us to export or erase your chats."
+msgstr ""
+
+#: includes/privacy/class-privacy.php:193
+msgid "While you chat, your browser keeps the conversation in this tab's session storage so it stays visible as you move between pages. It is removed when you close the tab."
+msgstr ""
+
+#: includes/rest/class-admin-controller.php:271
+msgid "Save the Turnstile keys and test them first: \"Test keys\" must accept the secret before the protection can be switched on."
+msgstr ""
+
+#: includes/rest/class-admin-controller.php:336
+msgid "This conversation does not exist."
+msgstr ""
+
+#: includes/rest/class-admin-controller.php:386
+msgid "Ask a question of up to 2,000 characters."
+msgstr ""
+
+#: includes/rest/class-admin-controller.php:429
+msgid "That is 20 previews this hour. Try again later."
+msgstr ""
+
+#. translators: 1: part, 2: parts.
+#: includes/rest/class-admin-controller.php:497
+msgid "Part %1$d of %2$d. "
+msgstr ""
+
+#: includes/rest/class-admin-controller.php:551
+msgid "This conversation has no handoff to send."
+msgstr ""
+
+#: includes/rest/class-admin-controller.php:596
+msgid "No image chosen: the widget uses the default bot icon."
+msgstr ""
+
+#: includes/rest/class-admin-controller.php:608
+msgid "A refresh is already running. Try again in a minute."
+msgstr ""
+
+#: includes/rest/class-knowledge-controller.php:214
+msgid "Choose Make active, Move to draft or Delete."
+msgstr ""
+
+#: includes/rest/class-knowledge-controller.php:218
+msgid "Select between 1 and 500 entries."
+msgstr ""
+
+#. translators: %d: files.
+#: includes/rest/class-knowledge-controller.php:252
+msgid "Import between 1 and %d files at a time."
+msgstr ""
+
+#: includes/rest/class-visitor-controller.php:225
+msgid "The help chat is switched off."
+msgstr ""
+
+#: includes/rest/class-visitor-controller.php:228
+msgid "The help chat is not available."
+msgstr ""
+
+#: includes/rest/class-visitor-controller.php:343
+#: includes/rest/class-visitor-controller.php:500
+msgid "This conversation is closed. Start a new one."
+msgstr ""
+
+#: includes/rest/class-visitor-controller.php:491
+msgid "Contact by email is switched off."
+msgstr ""
+
+#: includes/rest/class-visitor-controller.php:506
+msgid "Please enter your name."
+msgstr ""
+
+#: includes/rest/class-visitor-controller.php:509
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: includes/rest/class-visitor-controller.php:521
+msgid "The request key is not valid."
+msgstr ""
+
+#: includes/rest/class-visitor-controller.php:569
+msgid "Please try again."
+msgstr ""
+
+#. translators: %s: visitor email.
+#: includes/rest/class-visitor-controller.php:592
+msgid "We got your message. We will reply to %s by email."
+msgstr ""
+
+#: includes/rest/class-visitor-controller.php:628
+msgid "This conversation was already sent to the team."
+msgstr ""
+
+#: includes/rest/class-visitor-controller.php:652
+msgid "Please type a message."
+msgstr ""
+
+#. translators: %d: maximum characters.
+#: includes/rest/class-visitor-controller.php:656
+msgid "Please keep your message under %d characters."
+msgstr ""
+
+#: includes/rest/class-visitor-controller.php:687
+msgid "Too many messages. Please wait a moment."
+msgstr ""
+
+#: includes/rest/class-visitor-controller.php:700
+msgid "This conversation belongs to someone else."
+msgstr ""
+
+#: includes/rest/class-visitor-controller.php:709
+msgid "The assistant is busy. Try again in a few seconds."
+msgstr ""
+
+#: includes/security/class-cloudflare.php:186
+msgid "Could not download Cloudflare's IP ranges. The current list stays in use."
+msgstr ""
+
+#: includes/security/class-cloudflare.php:190
+msgid "Cloudflare's IP list did not look right. The current list stays in use."
+msgstr ""
+
+#: includes/security/class-turnstile.php:60
+msgid "Please confirm you are human."
+msgstr ""
+
+#: includes/security/class-turnstile.php:70
+msgid "The human check did not pass. Please try again."
+msgstr ""
+
+#. translators: %d: events this hour.
+#: includes/security/class-turnstile.php:185
+msgid "Sigma: Cloudflare Turnstile could not be reached %d time this hour. Messages to your team were still accepted, with a limit of 1 per hour per visitor."
+msgid_plural "Sigma: Cloudflare Turnstile could not be reached %d times this hour. Messages to your team were still accepted, with a limit of 1 per hour per visitor."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/team/class-avatar-status.php:53
+msgid "Not refreshed yet. Save the team or use Refresh avatars."
+msgstr ""
+
+#: includes/team/class-avatar-status.php:56
+msgid "the chat avatar"
+msgstr ""
+
+#: includes/team/class-avatar-status.php:57
+msgid "the chosen image"
+msgstr ""
+
+#: includes/team/class-avatar-status.php:58
+#: includes/team/class-avatar-status.php:59
+msgid "Gravatar"
+msgstr ""
+
+#. translators: 1: the picture source ("Gravatar" or "the chat avatar"), 2: a file type such as WEBP.
+#: includes/team/class-avatar-status.php:63
+msgid "Copy made from %1$s (%2$s)."
+msgstr ""
+
+#. translators: %s: the picture source.
+#: includes/team/class-avatar-status.php:66
+msgid "Up to date: %s has not changed."
+msgstr ""
+
+#: includes/team/class-avatar-status.php:69
+msgid "No Gravatar (404): the widget shows initials."
+msgstr ""
+
+#: includes/team/class-avatar-status.php:70
+msgid "No picture: the widget shows initials."
+msgstr ""
+
+#. translators: %s: why the refresh failed.
+#: includes/team/class-avatar-status.php:73
+msgid "Refresh failed: %s. The previous copy is still used."
+msgstr ""
+
+#. translators: %s: why the refresh failed.
+#: includes/team/class-avatar-status.php:76
+msgid "No copy: %s. The widget shows initials."
+msgstr ""
+
+#. translators: %s: an HTTP status code.
+#: includes/team/class-avatar-status.php:90
+msgid "Gravatar answered HTTP %s"
+msgstr ""
+
+#. translators: %s: the connection error.
+#: includes/team/class-avatar-status.php:93
+msgid "Gravatar could not be reached (%s)"
+msgstr ""
+
+#. translators: %s: a content type.
+#: includes/team/class-avatar-status.php:96
+msgid "Gravatar did not send an image (%s)"
+msgstr ""
+
+#: includes/team/class-avatar-status.php:98
+msgid "Gravatar sent an empty image"
+msgstr ""
+
+#: includes/team/class-avatar-status.php:100
+msgid "the image is over 2 MB"
+msgstr ""
+
+#: includes/team/class-avatar-status.php:102
+msgid "the chat avatar file is missing from the Media Library"
+msgstr ""
+
+#: includes/team/class-avatar-status.php:104
+msgid "the chat avatar file could not be read"
+msgstr ""
+
+#: includes/team/class-avatar-status.php:106
+msgid "the uploads/delta-assistant/avatars folder is not writable"
+msgstr ""
+
+#: includes/team/class-avatar-status.php:108
+msgid "a temporary file could not be written in the avatars folder"
+msgstr ""
+
+#. translators: %s: an image editor error code.
+#: includes/team/class-avatar-status.php:111
+msgid "the image editor could not open the picture (%s)"
+msgstr ""
+
+#. translators: %s: an image editor error code.
+#: includes/team/class-avatar-status.php:114
+msgid "the resized picture could not be saved as WebP or PNG (%s)"
+msgstr ""
+
+#. translators: %s: a PHP error class.
+#: includes/team/class-avatar-status.php:117
+msgid "an error stopped the refresh (%s)"
+msgstr ""
+
+#: includes/team/class-avatar-status.php:119
+msgid "unknown error"
+msgstr ""
+
+#: includes/team/class-profile.php:49
+#: includes/team/class-profile.php:77
+msgid "Chat avatar"
+msgstr ""
+
+#: includes/team/class-profile.php:70
+msgid "Display name in chat"
+msgstr ""
+
+#: includes/team/class-profile.php:73
+msgid "What visitors see. Empty: the first name. Never your login or email."
+msgstr ""
+
+#: includes/team/class-profile.php:81
+#: build/admin/admin.js:3690
+#: build/admin/admin.js:3784
+msgid "Choose image"
+msgstr ""
+
+#: includes/team/class-profile.php:82
+#: build/admin/admin.js:3699
+#: build/admin/admin.js:4203
+#: build/admin/admin.js:4257
+msgid "Remove"
+msgstr ""
+
+#: includes/team/class-profile.php:83
+msgid "Optional. Without one, your profile picture is used if you have one, else your initial. The widget shows a 96 px copy kept on this site."
+msgstr ""
+
+#: build/admin/admin.js:37
+msgid "The server did not answer within 15 seconds."
+msgstr ""
+
+#: build/admin/admin.js:75
+msgid "Something went wrong."
+msgstr ""
+
+#: build/admin/admin.js:163
+msgid "Switch to light look"
+msgstr ""
+
+#: build/admin/admin.js:163
+msgid "Switch to dark look"
+msgstr ""
+
+#: build/admin/admin.js:281
+msgid "Dismiss"
+msgstr ""
+
+#: build/admin/admin.js:324
+msgid "Dismiss this notice"
+msgstr ""
+
+#: build/admin/admin.js:345
+#: build/admin/admin.js:368
+msgid "Loading"
+msgstr ""
+
+#: build/admin/admin.js:388
+msgid "Made by 21press"
+msgstr ""
+
+#: build/admin/admin.js:391
+msgid "Sigma is free and open source. We also make Delta, the WordPress framework for AI agents."
+msgstr ""
+
+#: build/admin/admin.js:403
+#: build/admin/admin.js:412
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: build/admin/admin.js:410
+msgid "About Delta"
+msgstr ""
+
+#: build/admin/admin.js:418
+msgid "a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex=\"-1\"])"
+msgstr ""
+
+#: build/admin/admin.js:488
+#: build/admin/admin.js:533
+msgid "Close"
+msgstr ""
+
+#: build/admin/admin.js:558
+#: build/admin/admin.js:1156
+msgid "All"
+msgstr ""
+
+#: build/admin/admin.js:559
+msgid "AI only"
+msgstr ""
+
+#: build/admin/admin.js:560
+msgid "Emailed to support"
+msgstr ""
+
+#: build/admin/admin.js:561
+msgid "Closed"
+msgstr ""
+
+#: build/admin/admin.js:590
+msgid "Email not sent"
+msgstr ""
+
+#: build/admin/admin.js:633
+msgid "Read-only transcripts. Chats are deleted automatically after the period set in <settings>Settings</settings>."
+msgstr ""
+
+#: build/admin/admin.js:639
+#: build/admin/admin.js:1389
+msgid "Filter by status"
+msgstr ""
+
+#: build/admin/admin.js:682
+msgid "No conversations yet"
+msgstr ""
+
+#: build/admin/admin.js:686
+msgid "Chats show up here when people use the chat box. While “Show to admins only” is on, only administrators' test chats appear."
+msgstr ""
+
+#: build/admin/admin.js:693
+msgid "Check setup"
+msgstr ""
+
+#: build/admin/admin.js:714
+msgid "Search conversations"
+msgstr ""
+
+#: build/admin/admin.js:715
+msgid "Search by email, name, page or text"
+msgstr ""
+
+#: build/admin/admin.js:719
+#: build/admin/admin.js:1477
+msgid "Search"
+msgstr ""
+
+#. translators: %s: number of conversations.
+#: build/admin/admin.js:723
+#: build/admin/admin.js:804
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin/admin.js:731
+msgid "First question"
+msgstr ""
+
+#: build/admin/admin.js:739
+#: build/admin/admin.js:1014
+#: build/admin/admin.js:1515
+#: build/admin/admin.js:1953
+#: build/admin/admin.js:2162
+#: build/admin/admin.js:2926
+#: build/admin/admin.js:3358
+#: build/admin/admin.js:3906
+msgid "Status"
+msgstr ""
+
+#: build/admin/admin.js:743
+msgid "Messages"
+msgstr ""
+
+#: build/admin/admin.js:747
+msgid "Last activity (UTC)"
+msgstr ""
+
+#: build/admin/admin.js:766
+msgid "No conversations match."
+msgstr ""
+
+#: build/admin/admin.js:777
+#: build/admin/admin.js:872
+msgid "(no question)"
+msgstr ""
+
+#: build/admin/admin.js:782
+msgid "Anonymous"
+msgstr ""
+
+#: build/admin/admin.js:813
+msgid "Newer"
+msgstr ""
+
+#. translators: 1: current page, 2: number of pages.
+#: build/admin/admin.js:817
+#: build/admin/admin.js:1650
+msgid "%1$d of %2$d"
+msgstr ""
+
+#: build/admin/admin.js:824
+msgid "Older"
+msgstr ""
+
+#: build/admin/admin.js:848
+msgid "Sent."
+msgstr ""
+
+#. translators: %s: the mail error.
+#: build/admin/admin.js:851
+msgid "Failed again: %s"
+msgstr ""
+
+#: build/admin/admin.js:892
+msgid "Back to conversations"
+msgstr ""
+
+#: build/admin/admin.js:913
+msgid "Read-only transcript."
+msgstr ""
+
+#: build/admin/admin.js:929
+msgid "Loading the conversation"
+msgstr ""
+
+#. translators: %s: date and time.
+#: build/admin/admin.js:942
+#: build/admin/admin.js:959
+#: build/admin/admin.js:1068
+msgid "%s UTC"
+msgstr ""
+
+#: build/admin/admin.js:970
+msgid "Used:"
+msgstr ""
+
+#: build/admin/admin.js:982
+msgid "Not in docs"
+msgstr ""
+
+#: build/admin/admin.js:995
+msgid "Conversation details"
+msgstr ""
+
+#: build/admin/admin.js:1003
+msgid "Details"
+msgstr ""
+
+#: build/admin/admin.js:1010
+msgid "Anonymous (AI only)"
+msgstr ""
+
+#: build/admin/admin.js:1031
+msgid "Emailed"
+msgstr ""
+
+#: build/admin/admin.js:1039
+msgid "The email to support was not sent."
+msgstr ""
+
+#: build/admin/admin.js:1046
+msgid "Retry send"
+msgstr ""
+
+#: build/admin/admin.js:1062
+msgid "Agent"
+msgstr ""
+
+#: build/admin/admin.js:1064
+msgid "System"
+msgstr ""
+
+#: build/admin/admin.js:1080
+msgid "only .md and .txt files"
+msgstr ""
+
+#: build/admin/admin.js:1081
+msgid "larger than 1 MB"
+msgstr ""
+
+#: build/admin/admin.js:1082
+msgid "not UTF-8 text"
+msgstr ""
+
+#: build/admin/admin.js:1083
+msgid "the file is empty"
+msgstr ""
+
+#: build/admin/admin.js:1089
+msgid "%s word"
+msgid_plural "%s words"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin/admin.js:1160
+#: build/admin/admin.js:1619
+msgid "Active"
+msgstr ""
+
+#: build/admin/admin.js:1164
+#: build/admin/admin.js:1622
+msgid "Draft"
+msgstr ""
+
+#: build/admin/admin.js:1169
+msgid "%s entry"
+msgid_plural "%s entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: entry title.
+#: build/admin/admin.js:1225
+msgid "“%s” is active."
+msgstr ""
+
+#. translators: %s: entry title.
+#: build/admin/admin.js:1225
+msgid "“%s” moved to draft."
+msgstr ""
+
+#. translators: %s: number of entries.
+#: build/admin/admin.js:1245
+msgid "%s entry made active."
+msgid_plural "%s entries made active."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of entries.
+#: build/admin/admin.js:1245
+msgid "%s entry moved to draft."
+msgid_plural "%s entries moved to draft."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: entry title.
+#: build/admin/admin.js:1261
+msgid "“%s” deleted."
+msgstr ""
+
+#. translators: %s: number of entries.
+#: build/admin/admin.js:1267
+msgid "%s entry deleted."
+msgid_plural "%s entries deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin/admin.js:1311
+#: build/admin/admin.js:1375
+#: build/admin/admin.js:2056
+msgid "Import files"
+msgstr ""
+
+#: build/admin/admin.js:1319
+#: build/admin/admin.js:1383
+#: build/admin/admin.js:1831
+#: build/admin/admin.js:1852
+msgid "Add entry"
+msgstr ""
+
+#: build/admin/admin.js:1327
+msgid "Active entries are sent to your AI provider with every question, and the bot can share anything in them with any visitor. Don't put passwords, internal contacts or anything private here."
+msgstr ""
+
+#: build/admin/admin.js:1360
+msgid "No knowledge yet"
+msgstr ""
+
+#: build/admin/admin.js:1364
+msgid "Add what the agent should know that your site pages do not say: prices, policies, opening hours. Write an entry, or import the .md files you already have."
+msgstr ""
+
+#: build/admin/admin.js:1430
+#: build/admin/admin.js:1436
+msgid "Bulk actions"
+msgstr ""
+
+#: build/admin/admin.js:1440
+#: build/admin/admin.js:1584
+msgid "Make active"
+msgstr ""
+
+#: build/admin/admin.js:1444
+#: build/admin/admin.js:1584
+msgid "Move to draft"
+msgstr ""
+
+#: build/admin/admin.js:1448
+#: build/admin/admin.js:1602
+#: build/admin/admin.js:1716
+#: build/admin/admin.js:1839
+msgid "Delete"
+msgstr ""
+
+#: build/admin/admin.js:1455
+msgid "Apply"
+msgstr ""
+
+#: build/admin/admin.js:1472
+msgid "Search knowledge"
+msgstr ""
+
+#: build/admin/admin.js:1473
+msgid "Search titles and text"
+msgstr ""
+
+#: build/admin/admin.js:1496
+msgid "Select all"
+msgstr ""
+
+#: build/admin/admin.js:1503
+#: build/admin/admin.js:1880
+msgid "Title"
+msgstr ""
+
+#: build/admin/admin.js:1507
+#: build/admin/admin.js:1965
+msgid "Source"
+msgstr ""
+
+#: build/admin/admin.js:1511
+msgid "Length"
+msgstr ""
+
+#: build/admin/admin.js:1519
+msgid "Updated (UTC)"
+msgstr ""
+
+#. translators: %s: search text.
+#: build/admin/admin.js:1526
+msgid "No entries match “%s”."
+msgstr ""
+
+#: build/admin/admin.js:1526
+msgid "No active entries."
+msgstr ""
+
+#: build/admin/admin.js:1526
+msgid "No drafts."
+msgstr ""
+
+#. translators: %s: entry title.
+#: build/admin/admin.js:1536
+msgid "Select %s"
+msgstr ""
+
+#. translators: %s: entry title.
+#: build/admin/admin.js:1561
+msgid "Edit %s"
+msgstr ""
+
+#: build/admin/admin.js:1570
+msgid "Edit"
+msgstr ""
+
+#. translators: %s: entry title.
+#: build/admin/admin.js:1579
+msgid "Move to draft: %s"
+msgstr ""
+
+#. translators: %s: entry title.
+#: build/admin/admin.js:1579
+msgid "Make active: %s"
+msgstr ""
+
+#. translators: %s: entry title.
+#: build/admin/admin.js:1593
+msgid "Delete %s"
+msgstr ""
+
+#: build/admin/admin.js:1609
+msgid "Written here"
+msgstr ""
+
+#. translators: 1: number of active entries, 2: their word count, e.g. "1,200 words".
+#: build/admin/admin.js:1637
+msgid "The agent uses the %1$s active entry · %2$s"
+msgid_plural "The agent uses the %1$s active entries · %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin/admin.js:1637
+msgid "The agent uses no entries yet. Make one active to use it."
+msgstr ""
+
+#: build/admin/admin.js:1646
+msgid "Previous"
+msgstr ""
+
+#: build/admin/admin.js:1657
+msgid "Next"
+msgstr ""
+
+#: build/admin/admin.js:1704
+msgid "Delete this entry?"
+msgstr ""
+
+#. translators: %s: number of entries.
+#: build/admin/admin.js:1704
+msgid "Delete %s entry?"
+msgid_plural "Delete %s entries?"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin/admin.js:1710
+#: build/admin/admin.js:1845
+#: build/admin/admin.js:2062
+msgid "Cancel"
+msgstr ""
+
+#: build/admin/admin.js:1725
+msgid "The agent stops using it at once. You cannot undo this. To keep it without using it, move it to draft."
+msgid_plural "The agent stops using them at once. You cannot undo this. To keep them without using them, move them to draft."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: field label.
+#: build/admin/admin.js:1745
+msgid "%s: choose an .md or .txt file"
+msgstr ""
+
+#. translators: 1: file name, 2: the problem.
+#: build/admin/admin.js:1751
+msgid "%1$s: %2$s."
+msgstr ""
+
+#: build/admin/admin.js:1786
+msgid "This entry no longer exists."
+msgstr ""
+
+#: build/admin/admin.js:1793
+msgid "Enter a title."
+msgstr ""
+
+#: build/admin/admin.js:1794
+msgid "Keep the title under 200 characters."
+msgstr ""
+
+#: build/admin/admin.js:1795
+msgid "Write what the agent should know."
+msgstr ""
+
+#: build/admin/admin.js:1796
+msgid "Keep the content under 1 MB."
+msgstr ""
+
+#. translators: %s: entry title.
+#: build/admin/admin.js:1815
+msgid "“%s” saved."
+msgstr ""
+
+#. translators: %s: entry title.
+#: build/admin/admin.js:1818
+msgid "“%s” added."
+msgstr ""
+
+#. translators: %s: entry title.
+#: build/admin/admin.js:1818
+msgid "“%s” added as a draft."
+msgstr ""
+
+#: build/admin/admin.js:1831
+msgid "Edit entry"
+msgstr ""
+
+#: build/admin/admin.js:1852
+#: build/admin/admin.js:2649
+#: build/admin/admin.js:2898
+msgid "Saving…"
+msgstr ""
+
+#: build/admin/admin.js:1852
+msgid "Save"
+msgstr ""
+
+#: build/admin/admin.js:1865
+msgid "Start from a file (optional)"
+msgstr ""
+
+#: build/admin/admin.js:1866
+msgid "Fills the title and content from an .md file."
+msgstr ""
+
+#: build/admin/admin.js:1889
+msgid "For example: Opening hours"
+msgstr ""
+
+#: build/admin/admin.js:1908
+msgid "Content"
+msgstr ""
+
+#: build/admin/admin.js:1916
+msgid "Write what the agent should know. Markdown works: # headings, lists, **bold**."
+msgstr ""
+
+#: build/admin/admin.js:1929
+msgid "Markdown. The agent reads it as written."
+msgstr ""
+
+#: build/admin/admin.js:1929
+msgid "Short, clear facts work best. One topic per entry."
+msgstr ""
+
+#: build/admin/admin.js:1938
+msgid "Replace from a file"
+msgstr ""
+
+#: build/admin/admin.js:1939
+msgid "The file's text replaces the content above. Check it, then save."
+msgstr ""
+
+#: build/admin/admin.js:1955
+msgid "The agent uses this entry"
+msgstr ""
+
+#: build/admin/admin.js:1956
+msgid "Turn off to keep it as a draft."
+msgstr ""
+
+#. translators: %s: file name.
+#: build/admin/admin.js:1968
+msgid "From %s. Save to keep it. Edits here do not change the file."
+msgstr ""
+
+#. translators: 1: file name, 2: date.
+#: build/admin/admin.js:1968
+msgid "Imported from %1$s on %2$s. Edits here do not change the file."
+msgstr ""
+
+#. translators: %s: file name.
+#: build/admin/admin.js:1968
+msgid "Imported from %s. Edits here do not change the file."
+msgstr ""
+
+#: build/admin/admin.js:1968
+msgid "Written here."
+msgstr ""
+
+#. translators: 1: files imported, 2: of them new, 3: of them replacing an entry's text.
+#: build/admin/admin.js:2036
+msgid "Imported %1$s file: %2$s new, %3$s replaced."
+msgid_plural "Imported %1$s files: %2$s new, %3$s replaced."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: files imported, 2: of them new.
+#: build/admin/admin.js:2036
+msgid "Imported %1$s file: %2$s new."
+msgid_plural "Imported %1$s files: %2$s new."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: files imported, 2: of them replacing an entry's text.
+#: build/admin/admin.js:2036
+msgid "Imported %1$s file: %2$s replaced."
+msgid_plural "Imported %1$s files: %2$s replaced."
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin/admin.js:2068
+msgid "Importing…"
+msgstr ""
+
+#. translators: %s: number of files.
+#: build/admin/admin.js:2068
+msgid "Import %s file"
+msgid_plural "Import %s files"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin/admin.js:2104
+msgid "Choose .md files or drag them here"
+msgstr ""
+
+#: build/admin/admin.js:2108
+msgid "Each file becomes one entry. Up to 1 MB per file."
+msgstr ""
+
+#: build/admin/admin.js:2114
+msgid "The title comes from the file's first # heading, or from its name."
+msgstr ""
+
+#. translators: 1: files left out, 2: the most files at a time.
+#: build/admin/admin.js:2118
+msgid "%1$s file was left out: up to %2$s files at a time."
+msgid_plural "%1$s files were left out: up to %2$s files at a time."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of files.
+#: build/admin/admin.js:2127
+msgid "Ready to import (%s)"
+msgstr ""
+
+#. translators: 1: file name, 2: word count, 3: what happens to it.
+#: build/admin/admin.js:2144
+msgid "%1$s · %2$s · %3$s"
+msgstr ""
+
+#: build/admin/admin.js:2144
+msgid "same title as a file above, left out"
+msgstr ""
+
+#: build/admin/admin.js:2144
+msgid "replaces the current text"
+msgstr ""
+
+#: build/admin/admin.js:2144
+msgid "new"
+msgstr ""
+
+#. translators: 1: file name, 2: the problem.
+#: build/admin/admin.js:2144
+msgid "%1$s · can't import: %2$s"
+msgstr ""
+
+#. translators: %s: number of files.
+#: build/admin/admin.js:2150
+msgid "%s file has the same title as an entry. Importing replaces that entry’s text."
+msgid_plural "%s files have the same title as entries. Importing replaces those entries’ text."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: list of files and reasons.
+#: build/admin/admin.js:2154
+msgid "Not imported: %s."
+msgstr ""
+
+#: build/admin/admin.js:2164
+msgid "Make new entries active"
+msgstr ""
+
+#: build/admin/admin.js:2165
+msgid "Off: new entries start as drafts, so you can check them first."
+msgstr ""
+
+#: build/admin/admin.js:2431
+msgid "Loading preview…"
+msgstr ""
+
+#: build/admin/admin.js:2431
+msgid "The chat box preview couldn't load. The settings still work; reload the page to try again."
+msgstr ""
+
+#: build/admin/admin.js:2436
+msgid "AI provider"
+msgstr ""
+
+#: build/admin/admin.js:2438
+msgid "Handoffs"
+msgstr ""
+
+#: build/admin/admin.js:2439
+#: build/admin/admin.js:2602
+msgid "Go live"
+msgstr ""
+
+#: build/admin/admin.js:2478
+msgid "Connect the AI"
+msgstr ""
+
+#: build/admin/admin.js:2481
+msgid "The agent answers visitors with your AI provider. The key stays encrypted on this site."
+msgstr ""
+
+#: build/admin/admin.js:2489
+#: build/admin/admin.js:3414
+msgid "Provider"
+msgstr ""
+
+#: build/admin/admin.js:2498
+#: build/admin/admin.js:3424
+msgid "Anthropic (Claude)"
+msgstr ""
+
+#: build/admin/admin.js:2502
+#: build/admin/admin.js:3428
+msgid "OpenAI"
+msgstr ""
+
+#: build/admin/admin.js:2506
+#: build/admin/admin.js:3432
+msgid "Test provider (no AI, local sites only)"
+msgstr ""
+
+#. translators: %s: the key's last 4 characters.
+#: build/admin/admin.js:2511
+msgid "The key is set in wp-config.php (…%s)."
+msgstr ""
+
+#: build/admin/admin.js:2517
+#: build/admin/admin.js:3442
+msgid "API key"
+msgstr ""
+
+#. translators: %s: the key's last 4 characters.
+#: build/admin/admin.js:2524
+#: build/admin/admin.js:3458
+#: build/admin/admin.js:4066
+msgid "Saved (…%s). Type to replace."
+msgstr ""
+
+#: build/admin/admin.js:2524
+#: build/admin/admin.js:3458
+msgid "Paste the key"
+msgstr ""
+
+#: build/admin/admin.js:2530
+#: build/admin/admin.js:3444
+msgid "Stored encrypted. It is never shown again or sent to the browser."
+msgstr ""
+
+#: build/admin/admin.js:2539
+msgid "What should the agent answer from?"
+msgstr ""
+
+#: build/admin/admin.js:2542
+msgid "The agent only answers from the content you pick here."
+msgstr ""
+
+#: build/admin/admin.js:2549
+msgid "Sources"
+msgstr ""
+
+#. translators: 1: post type name, 2: number of published posts.
+#: build/admin/admin.js:2555
+#: build/admin/admin.js:3491
+msgid "%1$s, %2$d published"
+msgstr ""
+
+#: build/admin/admin.js:2562
+msgid "Published, public posts of these types. Password-protected posts are left out."
+msgstr ""
+
+#: build/admin/admin.js:2570
+msgid "Where do handoffs go?"
+msgstr ""
+
+#: build/admin/admin.js:2573
+msgid "When a visitor asks for a person, their message is emailed here. Replies go straight to the visitor."
+msgstr ""
+
+#: build/admin/admin.js:2593
+msgid "Empty: the site admin email. Add your team and mail settings later in Human support."
+msgstr ""
+
+#: build/admin/admin.js:2605
+msgid "Test the chat box on your site first. When it works, show it to every visitor."
+msgstr ""
+
+#: build/admin/admin.js:2611
+#: build/admin/admin.js:2931
+msgid "Show the chat box"
+msgstr ""
+
+#: build/admin/admin.js:2616
+#: build/admin/admin.js:2940
+msgid "Show to admins only"
+msgstr ""
+
+#: build/admin/admin.js:2617
+msgid "turn off to show it to everyone"
+msgstr ""
+
+#: build/admin/admin.js:2627
+msgid "Open the site"
+msgstr ""
+
+#: build/admin/admin.js:2649
+msgid "Finish"
+msgstr ""
+
+#: build/admin/admin.js:2649
+msgid "Continue"
+msgstr ""
+
+#: build/admin/admin.js:2654
+msgid "Skip setup"
+msgstr ""
+
+#: build/admin/admin.js:2665
+msgid "Answering from your content."
+msgstr ""
+
+#: build/admin/admin.js:2666
+msgid "AI answers are switched off."
+msgstr ""
+
+#: build/admin/admin.js:2667
+msgid "The chosen provider is not available on this site."
+msgstr ""
+
+#: build/admin/admin.js:2668
+msgid "Add an active knowledge base entry (Sigma → Knowledge) or choose a post type (AI agent → Knowledge)."
+msgstr ""
+
+#: build/admin/admin.js:2669
+msgid "The AI provider has no API key (AI agent → Connection)."
+msgstr ""
+
+#: build/admin/admin.js:2675
+msgid "Assistant"
+msgstr ""
+
+#: build/admin/admin.js:2679
+msgid "Bubble face"
+msgstr ""
+
+#: build/admin/admin.js:2683
+msgid "Chat"
+msgstr ""
+
+#: build/admin/admin.js:2687
+msgid "Sparkles"
+msgstr ""
+
+#: build/admin/admin.js:2763
+msgid "Changes saved."
+msgstr ""
+
+#: build/admin/admin.js:2842
+#: build/admin/admin.js:4943
+msgid "Settings sections"
+msgstr ""
+
+#: build/admin/admin.js:2856
+msgid "The chat box is off."
+msgstr ""
+
+#: build/admin/admin.js:2856
+msgid "The chat box is live for every visitor."
+msgstr ""
+
+#: build/admin/admin.js:2856
+msgid "The chat box shows to administrators only."
+msgstr ""
+
+#. translators: %s: AI status sentence.
+#: build/admin/admin.js:2858
+msgid "AI: %s"
+msgstr ""
+
+#: build/admin/admin.js:2866
+msgid "The look and texts are part of every page. After you save, clear your page cache (Cloudflare or a cache plugin) so visitors see the change."
+msgstr ""
+
+#: build/admin/admin.js:2884
+msgid "Unsaved changes"
+msgstr ""
+
+#: build/admin/admin.js:2892
+msgid "Discard"
+msgstr ""
+
+#: build/admin/admin.js:2898
+msgid "Save changes"
+msgstr ""
+
+#. translators: %s: number of IP ranges.
+#: build/admin/admin.js:2917
+msgid "Cloudflare ranges refreshed: %s range."
+msgid_plural "Cloudflare ranges refreshed: %s ranges."
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin/admin.js:2929
+msgid "SIGMA_DISABLED is set in wp-config.php, so the chat box is off whatever this says."
+msgstr ""
+
+#: build/admin/admin.js:2932
+msgid "Off hides the chat box everywhere and closes the visitor API."
+msgstr ""
+
+#: build/admin/admin.js:2938
+msgid "Testing"
+msgstr ""
+
+#: build/admin/admin.js:2941
+msgid "Only administrators see the chat box. Use it to test on a live site."
+msgstr ""
+
+#: build/admin/admin.js:2948
+msgid "Look"
+msgstr ""
+
+#: build/admin/admin.js:2953
+msgid "Shown in the chat box header. Empty: the site title."
+msgstr ""
+
+#: build/admin/admin.js:2972
+msgid "Colour scheme"
+msgstr ""
+
+#: build/admin/admin.js:2974
+msgid "Whether the chat box is light or dark. “Follow” matches your page's background, else the visitor's system setting."
+msgstr ""
+
+#: build/admin/admin.js:2983
+msgid "Follow the page"
+msgstr ""
+
+#: build/admin/admin.js:2987
+#: build/admin/admin.js:3243
+#: build/admin/admin.js:3259
+#: build/admin/admin.js:4108
+msgid "Light"
+msgstr ""
+
+#: build/admin/admin.js:2991
+#: build/admin/admin.js:3243
+#: build/admin/admin.js:3259
+#: build/admin/admin.js:4112
+msgid "Dark"
+msgstr ""
+
+#: build/admin/admin.js:2997
+msgid "Font"
+msgstr ""
+
+#: build/admin/admin.js:3006
+msgid "The site's font"
+msgstr ""
+
+#: build/admin/admin.js:3009
+msgid "System font"
+msgstr ""
+
+#: build/admin/admin.js:3016
+msgid "Launcher"
+msgstr ""
+
+#: build/admin/admin.js:3019
+msgid "Position"
+msgstr ""
+
+#: build/admin/admin.js:3031
+msgid "Bottom right"
+msgstr ""
+
+#: build/admin/admin.js:3034
+msgid "Bottom left"
+msgstr ""
+
+#: build/admin/admin.js:3042
+msgid "Offset from the side, px"
+msgstr ""
+
+#: build/admin/admin.js:3051
+msgid "Offset from the bottom, px"
+msgstr ""
+
+#: build/admin/admin.js:3057
+msgid "px from the side and bottom"
+msgstr ""
+
+#: build/admin/admin.js:3063
+msgid "Pulse"
+msgstr ""
+
+#: build/admin/admin.js:3065
+msgid "Pulse the launcher"
+msgstr ""
+
+#: build/admin/admin.js:3066
+msgid "A ring every 12 s until the chat is opened. Off for visitors who prefer less motion."
+msgstr ""
+
+#: build/admin/admin.js:3072
+msgid "Teaser"
+msgstr ""
+
+#: build/admin/admin.js:3074
+msgid "Show a teaser"
+msgstr ""
+
+#: build/admin/admin.js:3075
+msgid "A short message above the launcher, once per visit, 3 s after the first page."
+msgstr ""
+
+#: build/admin/admin.js:3082
+msgid "Teaser text"
+msgstr ""
+
+#: build/admin/admin.js:3087
+msgid "Emoji are fine."
+msgstr ""
+
+#: build/admin/admin.js:3092
+msgid "Home screen"
+msgstr ""
+
+#: build/admin/admin.js:3095
+msgid "Greeting"
+msgstr ""
+
+#: build/admin/admin.js:3102
+msgid "Intro"
+msgstr ""
+
+#: build/admin/admin.js:3110
+msgid "Data and privacy"
+msgstr ""
+
+#: build/admin/admin.js:3113
+msgid "Keep chats for"
+msgstr ""
+
+#: build/admin/admin.js:3127
+msgid "days"
+msgstr ""
+
+#: build/admin/admin.js:3132
+msgid "Privacy page"
+msgstr ""
+
+#: build/admin/admin.js:3138
+msgid "The site's privacy policy page"
+msgstr ""
+
+#: build/admin/admin.js:3144
+msgid "On delete"
+msgstr ""
+
+#: build/admin/admin.js:3146
+msgid "Delete chats and settings"
+msgstr ""
+
+#: build/admin/admin.js:3147
+msgid "When the plugin is deleted. This cannot be undone."
+msgstr ""
+
+#: build/admin/admin.js:3155
+msgid "Visitor IP from"
+msgstr ""
+
+#: build/admin/admin.js:3158
+msgid "Used for rate limits, never stored. Automatic reads CF-Connecting-IP only when the request comes from one of Cloudflare's own addresses, and the connection address otherwise, so it is safe with or without Cloudflare. Behind another proxy, a developer can pass the real IP with the <code>sigma_client_ip</code> filter."
+msgstr ""
+
+#. translators: 1: number of IP ranges, 2: date.
+#: build/admin/admin.js:3160
+msgid "%1$s Cloudflare range (refreshed %2$s)."
+msgid_plural "%1$s Cloudflare ranges (refreshed %2$s)."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of IP ranges, 2: date.
+#: build/admin/admin.js:3160
+msgid "%1$s Cloudflare range (bundled, %2$s)."
+msgid_plural "%1$s Cloudflare ranges (bundled, %2$s)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin/admin.js:3171
+msgid "Automatic (recommended)"
+msgstr ""
+
+#: build/admin/admin.js:3175
+msgid "The connection (REMOTE_ADDR)"
+msgstr ""
+
+#: build/admin/admin.js:3179
+msgid "Cloudflare (CF-Connecting-IP)"
+msgstr ""
+
+#: build/admin/admin.js:3185
+msgid "Requests reach this site through Cloudflare, so with this setting every visitor shares a few Cloudflare addresses and the rate limits hit everyone at once. Choose Automatic."
+msgstr ""
+
+#. translators: %s: age in days.
+#: build/admin/admin.js:3189
+msgid "The ranges are %s day old. Refresh them."
+msgid_plural "The ranges are %s days old. Refresh them."
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin/admin.js:3198
+msgid "Refresh ranges"
+msgstr ""
+
+#: build/admin/admin.js:3215
+msgid "Background"
+msgstr ""
+
+#: build/admin/admin.js:3216
+msgid "The chat panel. Its tints, hovers and borders are worked out from this colour."
+msgstr ""
+
+#: build/admin/admin.js:3221
+msgid "Text"
+msgstr ""
+
+#: build/admin/admin.js:3222
+msgid "All text in the chat panel. Muted text is a lighter mix of it."
+msgstr ""
+
+#: build/admin/admin.js:3227
+msgid "Brand"
+msgstr ""
+
+#: build/admin/admin.js:3228
+msgid "The launcher, the main buttons and the visitor’s messages. The text on it turns black or white by itself."
+msgstr ""
+
+#. translators: %s: contrast ratio.
+#: build/admin/admin.js:3238
+msgid "text %s:1"
+msgstr ""
+
+#. translators: %s: contrast ratio.
+#: build/admin/admin.js:3240
+msgid "text on brand %s:1"
+msgstr ""
+
+#. translators: %s: contrast ratio.
+#: build/admin/admin.js:3242
+msgid "brand %s:1"
+msgstr ""
+
+#. translators: 1: Light or Dark, 2: list of low contrasts.
+#: build/admin/admin.js:3243
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: build/admin/admin.js:3247
+msgid "Colours"
+msgstr ""
+
+#: build/admin/admin.js:3255
+msgid "Colour"
+msgstr ""
+
+#. translators: 1: colour name, 2: light or dark.
+#: build/admin/admin.js:3285
+msgid "%1$s, %2$s mode"
+msgstr ""
+
+#: build/admin/admin.js:3285
+msgid "light"
+msgstr ""
+
+#: build/admin/admin.js:3285
+msgid "dark"
+msgstr ""
+
+#: build/admin/admin.js:3300
+msgid "Low contrast"
+msgstr ""
+
+#: build/admin/admin.js:3317
+msgid "Reset to defaults"
+msgstr ""
+
+#: build/admin/admin.js:3350
+msgid "Visitors don't see the agent yet."
+msgstr ""
+
+#: build/admin/admin.js:3354
+msgid "Until then the chat box offers only “Talk to a human”, so the agent's name and avatar don't show."
+msgstr ""
+
+#: build/admin/admin.js:3360
+msgid "AI answers"
+msgstr ""
+
+#: build/admin/admin.js:3362
+msgid "Answer with AI"
+msgstr ""
+
+#: build/admin/admin.js:3363
+msgid "The agent answers visitors from your content."
+msgstr ""
+
+#: build/admin/admin.js:3370
+msgid "Identity"
+msgstr ""
+
+#: build/admin/admin.js:3374
+msgid "Shown in the chat with an “AI” badge, on its home card and in the teaser."
+msgstr ""
+
+#: build/admin/admin.js:3391
+msgid "Voice input"
+msgstr ""
+
+#: build/admin/admin.js:3393
+msgid "Voice input (dictation)"
+msgstr ""
+
+#: build/admin/admin.js:3395
+msgid "Let visitors dictate their question"
+msgstr ""
+
+#: build/admin/admin.js:3396
+msgid "Adds a microphone button to the AI chat. The visitor's browser turns speech into text, and nothing is sent until they press Send. In Chrome and Edge the audio is processed by the browser maker (Google or Microsoft); this site never receives it. Not available in Firefox."
+msgstr ""
+
+#: build/admin/admin.js:3411
+msgid "Connection"
+msgstr ""
+
+#: build/admin/admin.js:3447
+msgid "The saved key can't be read (the site's security keys changed). Paste it again."
+msgstr ""
+
+#. translators: %s: the key's last 4 characters.
+#: build/admin/admin.js:3450
+#: build/admin/admin.js:4060
+msgid "Set in wp-config.php (…%s)."
+msgstr ""
+
+#: build/admin/admin.js:3465
+msgid "Remove saved key"
+msgstr ""
+
+#: build/admin/admin.js:3470
+msgid "Streaming"
+msgstr ""
+
+#: build/admin/admin.js:3471
+msgid "Shows whether answers can appear word by word on this server."
+msgstr ""
+
+#: build/admin/admin.js:3479
+msgid "Answer from"
+msgstr ""
+
+#: build/admin/admin.js:3480
+msgid "The knowledge base, plus the published, public posts of the types you pick. Password-protected posts are left out."
+msgstr ""
+
+#: build/admin/admin.js:3484
+msgid "Knowledge base"
+msgstr ""
+
+#. translators: %s: number of active entries.
+#: build/admin/admin.js:3485
+msgid "always on, %s active entry"
+msgid_plural "always on, %s active entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin/admin.js:3497
+msgid "Index"
+msgstr ""
+
+#: build/admin/admin.js:3498
+msgid "It also rebuilds by itself after you publish or edit content."
+msgstr ""
+
+#: build/admin/admin.js:3506
+msgid "Rebuild now"
+msgstr ""
+
+#: build/admin/admin.js:3512
+#: build/admin/admin.js:3957
+msgid "Texts"
+msgstr ""
+
+#: build/admin/admin.js:3516
+#: build/admin/admin.js:3961
+msgid "Home card title"
+msgstr ""
+
+#: build/admin/admin.js:3524
+#: build/admin/admin.js:3969
+msgid "Home card text"
+msgstr ""
+
+#: build/admin/admin.js:3532
+msgid "Intro message"
+msgstr ""
+
+#: build/admin/admin.js:3538
+msgid "The first message of every new chat. Never sent to the AI or stored."
+msgstr ""
+
+#: build/admin/admin.js:3542
+#: build/admin/admin.js:3977
+msgid "“Continue” title"
+msgstr ""
+
+#: build/admin/admin.js:3550
+#: build/admin/admin.js:3986
+msgid "Privacy line"
+msgstr ""
+
+#: build/admin/admin.js:3560
+msgid "In the texts: <bot/> is the agent's name, <product/> the site name, <days/> how long chats are kept."
+msgstr ""
+
+#: build/admin/admin.js:3567
+msgid "Pricing and cost"
+msgstr ""
+
+#: build/admin/admin.js:3569
+msgid "Pricing page"
+msgstr ""
+
+#: build/admin/admin.js:3571
+msgid "The agent links it for pricing and billing questions and offers a human. Empty: it always offers a person."
+msgstr ""
+
+#: build/admin/admin.js:3581
+msgid "Usage (estimate)"
+msgstr ""
+
+#: build/admin/admin.js:3582
+msgid "No spending cap in the plugin. Rate limits stop abuse; you can also set a monthly limit in the provider's console."
+msgstr ""
+
+#: build/admin/admin.js:3588
+msgid "Month"
+msgstr ""
+
+#: build/admin/admin.js:3592
+msgid "Answers"
+msgstr ""
+
+#: build/admin/admin.js:3596
+msgid "Cost"
+msgstr ""
+
+#: build/admin/admin.js:3619
+msgid "Key in wp-config.php"
+msgstr ""
+
+#: build/admin/admin.js:3620
+msgid "Optional. A key defined there replaces the one above."
+msgstr ""
+
+#: build/admin/admin.js:3637
+msgid "Model"
+msgstr ""
+
+#: build/admin/admin.js:3639
+msgid "Faster models answer sooner and cost less; the most capable ones are slower and cost more."
+msgstr ""
+
+#. translators: 1: model name, 2: model id.
+#: build/admin/admin.js:3647
+msgid "%1$s (%2$s, default)"
+msgstr ""
+
+#. translators: 1: model name, 2: model id.
+#: build/admin/admin.js:3647
+msgid "%1$s (%2$s)"
+msgstr ""
+
+#. translators: %s: model id.
+#: build/admin/admin.js:3650
+msgid "%s (current, not in the list)"
+msgstr ""
+
+#: build/admin/admin.js:3661
+msgid "Chat box logo"
+msgstr ""
+
+#: build/admin/admin.js:3671
+msgid "Logo"
+msgstr ""
+
+#: build/admin/admin.js:3672
+msgid "Shown next to the name in the chat box header, 24 px. Square images work best. None: just the name."
+msgstr ""
+
+#: build/admin/admin.js:3684
+msgid "No logo"
+msgstr ""
+
+#: build/admin/admin.js:3690
+#: build/admin/admin.js:3784
+msgid "Change image"
+msgstr ""
+
+#: build/admin/admin.js:3693
+#: build/admin/admin.js:3787
+msgid "You need permission to upload files to choose an image."
+msgstr ""
+
+#: build/admin/admin.js:3713
+#: build/admin/admin.js:3732
+#: build/admin/admin.js:3737
+msgid "Bot icon"
+msgstr ""
+
+#: build/admin/admin.js:3729
+msgid "Used everywhere the bot appears: the chat button, the teaser, the home cards, the chat and next to each answer, and the wp-admin menu."
+msgstr ""
+
+#: build/admin/admin.js:3730
+msgid "Choose an image from the Media Library. Square images work best."
+msgstr ""
+
+#: build/admin/admin.js:3730
+msgid "Save to make the copy the chat box uses (96×96, kept on this site)."
+msgstr ""
+
+#: build/admin/admin.js:3777
+msgid "Upload image"
+msgstr ""
+
+#. translators: 1: HTTP status, 2: content type.
+#: build/admin/admin.js:3819
+msgid "The server answered %1$s %2$s"
+msgstr ""
+
+#: build/admin/admin.js:3830
+msgid "%s s"
+msgstr ""
+
+#. translators: 1: time to the first part, 2: number of parts, 3: total time.
+#: build/admin/admin.js:3833
+msgid "Streaming works: first part after %1$s, all %2$s parts after %3$s."
+msgstr ""
+
+#: build/admin/admin.js:3837
+msgid "Your server or proxy buffers responses: answers will appear all at once. First part after %1$s, last after %2$s. Check: nginx \"fastcgi_buffering off\" or honouring X-Accel-Buffering; Apache mod_deflate or mod_proxy_fcgi flushpackets; LiteSpeed \"X-LiteSpeed-Cache-Control: no-cache\" and its response buffering; a Cloudflare rule that compresses or caches /wp-json/."
+msgstr ""
+
+#. translators: %s: error message.
+#: build/admin/admin.js:3842
+msgid "The test could not run: %s"
+msgstr ""
+
+#: build/admin/admin.js:3853
+#: build/admin/admin.js:4080
+#: build/admin/admin.js:4576
+msgid "Testing…"
+msgstr ""
+
+#: build/admin/admin.js:3853
+msgid "Test streaming"
+msgstr ""
+
+#: build/admin/admin.js:3856
+msgid "5 seconds, no AI, no cost."
+msgstr ""
+
+#: build/admin/admin.js:3868
+msgid "Not built yet"
+msgstr ""
+
+#. translators: %s: number of pages.
+#: build/admin/admin.js:3877
+msgid "%s page"
+msgid_plural "%s pages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin/admin.js:3881
+msgid "Retrieval"
+msgstr ""
+
+#: build/admin/admin.js:3881
+msgid "Whole docs"
+msgstr ""
+
+#: build/admin/admin.js:3885
+msgid "Rebuild scheduled"
+msgstr ""
+
+#. translators: 1: tokens, 2: model, 3: tokens with room for the chat, 4: tokens allowed, 5: date.
+#: build/admin/admin.js:3892
+msgid "%1$s tokens with the rules (exact, %2$s), %3$s with room for the chat, of %4$s allowed. Built %5$s UTC."
+msgstr ""
+
+#. translators: 1: tokens, 2: tokens with room for the chat, 3: tokens allowed, 4: date.
+#: build/admin/admin.js:3892
+msgid "About %1$s tokens (estimate), %2$s with room for the chat, of %3$s allowed. Built %4$s UTC."
+msgstr ""
+
+#: build/admin/admin.js:3894
+msgid "The content is larger than the budget, so each question gets the best-matching sections and a map of every page."
+msgstr ""
+
+#: build/admin/admin.js:3894
+msgid "Every question gets all the content, cached between questions."
+msgstr ""
+
+#. translators: %s: error message.
+#: build/admin/admin.js:3899
+msgid "The exact token count failed: %s The estimate is used."
+msgstr ""
+
+#: build/admin/admin.js:3910
+msgid "Let visitors reach the team"
+msgstr ""
+
+#: build/admin/admin.js:3911
+msgid "Visitors can leave a message, and it is emailed to the team."
+msgstr ""
+
+#: build/admin/admin.js:3927
+msgid "Handoff email"
+msgstr ""
+
+#: build/admin/admin.js:3929
+msgid "Send handoffs to"
+msgstr ""
+
+#: build/admin/admin.js:3931
+msgid "Replies go to the visitor (Reply-To). Empty: the site admin email."
+msgstr ""
+
+#: build/admin/admin.js:3982
+msgid "For a chat sent to the team."
+msgstr ""
+
+#: build/admin/admin.js:4020
+msgid "Spam protection"
+msgstr ""
+
+#: build/admin/admin.js:4023
+msgid "Cloudflare Turnstile"
+msgstr ""
+
+#: build/admin/admin.js:4025
+msgid "Protect the form with Cloudflare Turnstile"
+msgstr ""
+
+#: build/admin/admin.js:4026
+msgid "Visitors confirm they are human before the message is sent."
+msgstr ""
+
+#: build/admin/admin.js:4026
+msgid "Save both keys and test them first."
+msgstr ""
+
+#: build/admin/admin.js:4033
+msgid "Site key"
+msgstr ""
+
+#: build/admin/admin.js:4035
+msgid "In the <link>Cloudflare Turnstile dashboard</link>, create a widget for your domain and paste both keys."
+msgstr ""
+
+#: build/admin/admin.js:4052
+msgid "Secret key"
+msgstr ""
+
+#: build/admin/admin.js:4054
+msgid "Stored encrypted. It is never shown again or sent to the browser. SIGMA_TURNSTILE_SECRET in wp-config.php overrides it."
+msgstr ""
+
+#: build/admin/admin.js:4057
+msgid "The saved secret can't be read (the site's security keys changed). Paste it again."
+msgstr ""
+
+#: build/admin/admin.js:4066
+msgid "Paste the secret key"
+msgstr ""
+
+#: build/admin/admin.js:4072
+#: build/admin/admin.js:4566
+msgid "Test"
+msgstr ""
+
+#: build/admin/admin.js:4080
+msgid "Test keys"
+msgstr ""
+
+#: build/admin/admin.js:4083
+msgid "Save first."
+msgstr ""
+
+#: build/admin/admin.js:4087
+msgid "Secret accepted."
+msgstr ""
+
+#. translators: %s: Cloudflare's error codes.
+#: build/admin/admin.js:4090
+msgid "Cloudflare refused it: %s."
+msgstr ""
+
+#: build/admin/admin.js:4090
+msgid "no reason given"
+msgstr ""
+
+#: build/admin/admin.js:4094
+msgid "Appearance"
+msgstr ""
+
+#: build/admin/admin.js:4104
+msgid "Auto (follow the chat box)"
+msgstr ""
+
+#: build/admin/admin.js:4168
+msgid "Team"
+msgstr ""
+
+#: build/admin/admin.js:4172
+msgid "Who answers “Talk to a human”. The first three show in the chat box, in this order: drag a row to change it. Each person sets their chat name and avatar in Users → Profile → Sigma."
+msgstr ""
+
+#: build/admin/admin.js:4176
+msgid "No one yet. Add Authors, Editors or Administrators below."
+msgstr ""
+
+#: build/admin/admin.js:4184
+msgid "Order"
+msgstr ""
+
+#: build/admin/admin.js:4189
+msgid "Person"
+msgstr ""
+
+#: build/admin/admin.js:4193
+msgid "Role"
+msgstr ""
+
+#: build/admin/admin.js:4197
+msgid "Avatar"
+msgstr ""
+
+#. translators: %s: person's name.
+#: build/admin/admin.js:4219
+msgid "Drag to reorder %s"
+msgstr ""
+
+#. translators: %s: chat name.
+#: build/admin/admin.js:4237
+msgid "as “%s”"
+msgstr ""
+
+#. translators: %s: person's name.
+#: build/admin/admin.js:4255
+msgid "Remove %s"
+msgstr ""
+
+#: build/admin/admin.js:4270
+msgid "Refreshing…"
+msgstr ""
+
+#: build/admin/admin.js:4270
+msgid "Refresh avatars"
+msgstr ""
+
+#: build/admin/admin.js:4273
+msgid "Save the team first."
+msgstr ""
+
+#: build/admin/admin.js:4273
+msgid "The chat box keeps its own copies. They also refresh on save and daily."
+msgstr ""
+
+#: build/admin/admin.js:4283
+#: build/admin/admin.js:4323
+msgid "Add"
+msgstr ""
+
+#: build/admin/admin.js:4291
+msgid "Search Authors and above"
+msgstr ""
+
+#: build/admin/admin.js:4330
+msgid "Team avatars"
+msgstr ""
+
+#: build/admin/admin.js:4332
+msgid "Show team avatars"
+msgstr ""
+
+#: build/admin/admin.js:4333
+msgid "Pictures and first names next to “Talk to a human”. Only copies kept on this site, never Gravatar links."
+msgstr ""
+
+#: build/admin/admin.js:4353
+msgid "Problem"
+msgstr ""
+
+#: build/admin/admin.js:4353
+msgid "Picture"
+msgstr ""
+
+#: build/admin/admin.js:4353
+msgid "Initials"
+msgstr ""
+
+#: build/admin/admin.js:4353
+msgid "Not made yet"
+msgstr ""
+
+#: build/admin/admin.js:4366
+msgid "The image failed to load in the browser."
+msgstr ""
+
+#: build/admin/admin.js:4382
+msgid "TCP connect"
+msgstr ""
+
+#: build/admin/admin.js:4383
+msgid "Server greeting"
+msgstr ""
+
+#: build/admin/admin.js:4384
+msgid "TLS and certificate"
+msgstr ""
+
+#: build/admin/admin.js:4385
+msgid "Login (AUTH)"
+msgstr ""
+
+#. translators: %s: email address.
+#: build/admin/admin.js:4415
+msgid "Test email sent to %s."
+msgstr ""
+
+#. translators: %s: mail error.
+#: build/admin/admin.js:4418
+msgid "The test email failed: %s"
+msgstr ""
+
+#: build/admin/admin.js:4430
+msgid "Sending email"
+msgstr ""
+
+#: build/admin/admin.js:4433
+msgid "Send with"
+msgstr ""
+
+#: build/admin/admin.js:4435
+msgid "SMTP applies to this plugin's emails only; other emails on the site are not affected."
+msgstr ""
+
+#: build/admin/admin.js:4443
+msgid "WordPress mail (as the site is set up)"
+msgstr ""
+
+#: build/admin/admin.js:4446
+msgid "SMTP (built in)"
+msgstr ""
+
+#: build/admin/admin.js:4452
+msgid "Host"
+msgstr ""
+
+#: build/admin/admin.js:4464
+msgid "Port and encryption"
+msgstr ""
+
+#: build/admin/admin.js:4478
+msgid "Encryption"
+msgstr ""
+
+#: build/admin/admin.js:4484
+msgid "STARTTLS (usually 587)"
+msgstr ""
+
+#: build/admin/admin.js:4488
+msgid "SSL/TLS (usually 465)"
+msgstr ""
+
+#: build/admin/admin.js:4492
+msgid "None"
+msgstr ""
+
+#: build/admin/admin.js:4499
+msgid "Authentication"
+msgstr ""
+
+#: build/admin/admin.js:4501
+msgid "Use a username and password"
+msgstr ""
+
+#: build/admin/admin.js:4507
+msgid "Username"
+msgstr ""
+
+#: build/admin/admin.js:4518
+msgid "Password"
+msgstr ""
+
+#: build/admin/admin.js:4520
+msgid "Stored encrypted and never shown again. You can define SIGMA_SMTP_PASSWORD in wp-config.php instead."
+msgstr ""
+
+#: build/admin/admin.js:4523
+msgid "Set in wp-config.php (SIGMA_SMTP_PASSWORD)."
+msgstr ""
+
+#: build/admin/admin.js:4529
+msgid "Saved. Type to replace."
+msgstr ""
+
+#: build/admin/admin.js:4529
+msgid "SMTP password or key"
+msgstr ""
+
+#: build/admin/admin.js:4535
+msgid "From"
+msgstr ""
+
+#: build/admin/admin.js:4537
+msgid "Replies always go to the visitor (Reply-To)."
+msgstr ""
+
+#: build/admin/admin.js:4550
+msgid "From name"
+msgstr ""
+
+#: build/admin/admin.js:4559
+msgid "Check"
+msgstr ""
+
+#: build/admin/admin.js:4567
+msgid "Save the settings first: the tests use the saved settings."
+msgstr ""
+
+#: build/admin/admin.js:4567
+msgid "Uses the saved settings."
+msgstr ""
+
+#: build/admin/admin.js:4576
+msgid "Test connection"
+msgstr ""
+
+#: build/admin/admin.js:4582
+msgid "Send test email"
+msgstr ""
+
+#: build/admin/admin.js:4603
+msgid "Skipped"
+msgstr ""
+
+#: build/admin/admin.js:4603
+msgid "Pass"
+msgstr ""
+
+#: build/admin/admin.js:4603
+msgid "Fail"
+msgstr ""
+
+#: build/admin/admin.js:4619
+msgid "Last send"
+msgstr ""
+
+#. translators: %s: date and time.
+#: build/admin/admin.js:4624
+msgid "Last success %s UTC."
+msgstr ""
+
+#: build/admin/admin.js:4624
+msgid "No email sent yet."
+msgstr ""
+
+#. translators: 1: date and time, 2: mail error.
+#: build/admin/admin.js:4626
+msgid "Last error %1$s UTC: %2$s"
+msgstr ""
+
+#. translators: %s: number of emails.
+#: build/admin/admin.js:4631
+msgid "The last %s emails failed."
+msgstr ""
+
+#. translators: %s: number of emails.
+#: build/admin/admin.js:4635
+msgid "%s handoff email not sent: retry it in <link>Conversations</link>."
+msgid_plural "%s handoff emails not sent: retry them in <link>Conversations</link>."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: most characters.
+#: build/admin/admin.js:4648
+msgid "Empty: the default. Up to %s characters, plain text."
+msgstr ""
+
+#: build/admin/admin.js:4673
+msgid "For developers"
+msgstr ""
+
+#: build/admin/admin.js:4696
+msgid "Constant name"
+msgstr ""
+
+#: build/admin/admin.js:4703
+msgid "Copied"
+msgstr ""
+
+#: build/admin/admin.js:4703
+msgid "Copy"
+msgstr ""
+
+#: build/admin/admin.js:4713
+msgid "Chat box switched on"
+msgstr ""
+
+#: build/admin/admin.js:4719
+msgid "Add the AI provider key"
+msgstr ""
+
+#: build/admin/admin.js:4724
+msgid "Choose what the agent answers from"
+msgstr ""
+
+#. translators: %s: email address.
+#: build/admin/admin.js:4731
+msgid "Handoffs go to %s"
+msgstr ""
+
+#: build/admin/admin.js:4736
+msgid "Send a test email"
+msgstr ""
+
+#: build/admin/admin.js:4742
+msgid "Show the chat box to everyone"
+msgstr ""
+
+#: build/admin/admin.js:4758
+msgid "Setup"
+msgstr ""
+
+#: build/admin/admin.js:4761
+msgid "All done. The chat box is ready."
+msgstr ""
+
+#: build/admin/admin.js:4761
+msgid "Finish these to get the chat box ready."
+msgstr ""
+
+#. translators: 1: steps done, 2: all steps.
+#: build/admin/admin.js:4770
+msgid "%1$d of %2$d done"
+msgstr ""
+
+#: build/admin/admin.js:4781
+msgid "Setup progress"
+msgstr ""
+
+#: build/admin/admin.js:4804
+msgid "Run setup"
+msgstr ""
+
+#: build/admin/admin.js:4811
+msgid "The following system rules always apply and override anything above:"
+msgstr ""
+
+#: build/admin/admin.js:4831
+msgid "Instructions"
+msgstr ""
+
+#: build/admin/admin.js:4840
+msgid "How the bot answers"
+msgstr ""
+
+#: build/admin/admin.js:4843
+msgid "Customised"
+msgstr ""
+
+#: build/admin/admin.js:4846
+msgid "Default"
+msgstr ""
+
+#: build/admin/admin.js:4851
+msgid "Who the agent is, what it talks about, its tone, length and language. Plain text. You can use <bot/>, <product/> and <pricing/>; they are filled in for each answer."
+msgstr ""
+
+#: build/admin/admin.js:4873
+msgid "Empty: the default is used. "
+msgstr ""
+
+#. translators: 1: characters used, 2: most characters.
+#: build/admin/admin.js:4873
+msgid "%1$s / %2$s characters"
+msgstr ""
+
+#: build/admin/admin.js:4879
+msgid "Reset to default"
+msgstr ""
+
+#: build/admin/admin.js:4886
+msgid "System rules: always applied"
+msgstr ""
+
+#: build/admin/admin.js:4895
+msgid "They keep the answer markers, the doc links and the protection against prompt injection working. They're added after your instructions, override them, and can't be edited."
+msgstr ""
+
+#: build/admin/admin.js:4899
+msgid "System rules (read-only)"
+msgstr ""
+
+#: build/admin/admin.js:4905
+msgid "Try with real AI in the live preview"
+msgstr ""
+
+#: build/admin/admin.js:4906
+msgid "Questions in the preview get answers from your AI provider with these instructions, saved or not. It costs like a normal question; up to 20 an hour"
+msgstr ""

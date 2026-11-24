@@ -1,0 +1,23 @@
+{
+  "name": "@sigma/widget",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Visitor help bubble for delta-assistant: deferred bubble + lazy panel in a shadow root.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --watch & node dev/mock-server.mjs",
+    "mock": "node dev/mock-server.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test",
+    "test:isolation": "playwright test tests/isolation.spec.ts --project=chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "esbuild": "0.28.2",
+    "typescript": "7.0.2"
+  },
+  "dependencies": {
+    "preact": "11.2.0"
+  }
+}

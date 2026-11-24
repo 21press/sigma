@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<ruleset name="sigma">
+	<description>WordPress coding standards for Delta Assistant.</description>
+
+	<file>sigma.php</file>
+	<file>uninstall.php</file>
+	<file>includes</file>
+
+	<arg name="extensions" value="php"/>
+	<arg value="sp"/>
+	<arg name="colors"/>
+
+	<config name="minimum_wp_version" value="6.9"/>
+	<config name="testVersion" value="8.2-"/>
+
+	<rule ref="WordPress-Extra"/>
+	<rule ref="WordPress-Docs"/>
+	<rule ref="PHPCompatibilityWP"/>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="sigma"/>
+			</property>
+		</properties>
+	</rule>
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="sigma"/>
+				<element value="delta_assistant"/>
+				<element value="TwentyOnePress\Sigma"/>
+				<element value="P21_SIGMA"/>
+			</property>
+		</properties>
+	</rule>
+
+	<!-- House style (delta-plugin): class files named class-*.php under a namespace, short ternaries allowed. -->
+	<rule ref="Universal.Operators.DisallowShortTernary">
+		<severity>0</severity>
+	</rule>
+</ruleset>

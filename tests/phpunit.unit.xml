@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- Unit layer: Delta Assistant's pure classes, no WordPress. Run with `npm run test:unit`. -->
+<phpunit
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+	bootstrap="php/bootstrap-unit.php"
+	cacheResultFile=".results/unit.cache"
+	colors="true"
+	executionOrder="random"
+	resolveDependencies="true"
+	beStrictAboutOutputDuringTests="true"
+	beStrictAboutChangesToGlobalState="true"
+	failOnRisky="true"
+	failOnWarning="true"
+	convertDeprecationsToExceptions="true"
+>
+	<testsuites>
+		<testsuite name="unit">
+			<directory suffix="-test.php">php/unit</directory>
+		</testsuite>
+	</testsuites>
+	<logging>
+		<junit outputFile=".results/unit.xml"/>
+	</logging>
+</phpunit>

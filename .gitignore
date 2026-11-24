@@ -1,0 +1,12 @@
+node_modules
+vendor/
+tests/vendor
+tests/.results/
+dist/
+build/
+*.zip
+.env
+.env.*
+.DS_Store
+test-results/
+playwright-report/

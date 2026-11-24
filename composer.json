@@ -1,0 +1,17 @@
+{
+	"name": "21press/sigma",
+	"description": "Sigma: a chat box with AI answers from your own docs and knowledge base, and an email handoff.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"php": ">=8.2",
+		"ext-sodium": "*",
+		"ext-json": "*"
+	},
+	"config": {
+		"platform": {
+			"php": "8.2"
+		},
+		"sort-packages": true
+	}
+}

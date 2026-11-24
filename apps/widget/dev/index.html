@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sigma widget — dev page</title>
+<!-- Deliberately hostile theme CSS: none of it may reach the widget. -->
+<style>
+	html { font-size: 62.5%; }
+	* { box-sizing: content-box !important; font-family: Georgia, serif !important; letter-spacing: .2em; line-height: 3 !important; }
+	body { margin: 0; padding: 2rem; color: #c00; background: #fffbe6; text-transform: uppercase; }
+	button { background: hotpink !important; padding: 20px !important; border: 4px dotted lime !important; border-radius: 0 !important; }
+	div, p, a, form, textarea, input, label { border: 1px solid green; margin: 7px; color: purple !important; }
+	svg { width: 200px !important; height: 200px !important; }
+	h2 { font-size: 50px !important; }
+	body > * { position: relative; z-index: 999; } /* high, but below the widget (2147482000, under consent managers) */
+	:root[data-theme="dark"] body { background: #18181b; color: #fafafa; }
+	main { max-width: 60rem; }
+</style>
+</head>
+<body>
+<main>
+	<h1>Theme page</h1>
+	<p>Hostile CSS on purpose: rem at 62.5%, serif + uppercase everywhere, pink buttons, green borders.</p>
+	<p>
+		<button type="button" onclick="document.documentElement.setAttribute('data-theme','dark')">Page dark</button>
+		<button type="button" onclick="document.documentElement.setAttribute('data-theme','light')">Page light</button>
+		<button type="button" onclick="document.documentElement.removeAttribute('data-theme')">Follow OS</button>
+	</p>
+	<p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus.</p>
+</main>
+<script>
+	// Test fixtures: ?blocker=before → a max-z overlay before the widget; ?cookie=1 → a fixed bottom-right cookie
+	// card (about 200px tall) with an Accept button that removes it; ?cookie=late → the card appears after 1.5 s.
+	(function () {
+		var q = new URLSearchParams(location.search);
+		window.daBlocker = function () {
+			var d = document.createElement('div');
+			d.className = 'test-blocker';
+			// Max z-index but not fixed (absolute over the first screen), so it tests stacking, not the consent guard.
+			d.setAttribute('style', 'position:absolute!important;left:0!important;top:0!important;width:100vw!important;height:100vh!important;z-index:2147483647!important;background:rgba(0,0,0,.08)!important;margin:0!important;border:0!important');
+			document.body.appendChild(d);
+			return d;
+		};
+		// A full-screen consent wall (fixed, inset 0) with a centred dialog and an "Accept all" button that removes it.
+		window.daWall = function () {
+			var w = document.createElement('div');
+			w.className = 'test-wall';
+			w.setAttribute('style', 'position:fixed!important;inset:0!important;z-index:2147483000!important;background:rgba(0,0,0,.55)!important;margin:0!important;border:0!important;display:flex!important;align-items:center!important;justify-content:center!important');
+			w.innerHTML = '<div style="background:#fff!important;color:#111!important;padding:24px!important;width:280px!important;margin:0!important;border:0!important;font:14px/1.4 system-ui!important;text-transform:none!important;letter-spacing:0!important"><p style="margin:0 0 12px!important;border:0!important;color:#111!important;line-height:1.4!important">Choose your cookies.</p><button type="button" class="test-wall-accept" style="padding:10px 16px!important;background:#111!important;color:#fff!important;border:0!important;line-height:1.2!important">Accept all</button></div>';
+			w.querySelector('button').addEventListener('click', function () { w.remove(); });
+			document.body.appendChild(w);
+			return w;
+		};
+		// A site menu that already exists in the page and opens by toggling a class (no new node), with a 200ms
+		// fade, like most theme mobile menus: a "Menu" button opens it full screen, "Close" or Escape closes it.
+		window.daMenu = function () {
+			var css = document.createElement('style');
+			css.textContent = '.test-menu{position:fixed!important;inset:0!important;z-index:1000!important;background:#222!important;margin:0!important;border:0!important;visibility:hidden;opacity:0;transition:opacity .2s,visibility .2s}.test-menu.is-open{visibility:visible;opacity:1}';
+			document.head.appendChild(css);
+			var m = document.createElement('div');
+			m.className = 'test-menu';
+			m.innerHTML = '<button type="button" class="test-menu-close" style="position:absolute!important;top:16px!important;right:16px!important;padding:10px!important;background:#fff!important;color:#111!important;border:0!important;line-height:1.2!important">Close</button>';
+			var b = document.createElement('button');
+			b.type = 'button';
+			b.className = 'test-menu-open';
+			b.textContent = 'Menu';
+			b.setAttribute('style', 'position:fixed!important;top:8px!important;left:8px!important;z-index:999!important;padding:8px!important;margin:0!important;line-height:1.2!important');
+			b.addEventListener('click', function () { m.classList.add('is-open'); });
+			m.querySelector('button').addEventListener('click', function () { m.classList.remove('is-open'); });
+			document.addEventListener('keydown', function (e) { if (e.key === 'Escape') m.classList.remove('is-open'); });
+			document.body.appendChild(m);
+			document.body.appendChild(b);
+		};
+		window.daCookie = function () {
+			var c = document.createElement('div');
+			c.className = 'test-cookie';
+			c.setAttribute('role', 'dialog');
+			c.setAttribute('aria-label', 'Cookies');
+			c.setAttribute('style', 'position:fixed!important;right:16px!important;bottom:16px!important;width:320px!important;max-width:calc(100vw - 32px)!important;height:200px!important;box-sizing:border-box!important;z-index:2147483000!important;background:#fff!important;color:#111!important;padding:16px!important;margin:0!important;border:1px solid #ccc!important;font:14px/1.4 system-ui!important;text-transform:none!important;letter-spacing:0!important');
+			c.innerHTML = '<p style="margin:0 0 12px!important;border:0!important;color:#111!important;line-height:1.4!important">We use cookies.</p><button type="button" class="test-accept" style="position:absolute!important;right:16px!important;bottom:16px!important;padding:10px 16px!important;background:#111!important;color:#fff!important;border:0!important;line-height:1.2!important">Accept</button>';
+			c.querySelector('button').addEventListener('click', function () { c.remove(); });
+			document.body.appendChild(c);
+			return c;
+		};
+	})();
+</script>
+<script>
+	(function () {
+		var q = new URLSearchParams(location.search);
+		if (q.get('blocker') === 'before') window.daBlocker();
+		// ?bg=dark → a dark page without data-theme (like deltatheme.com); ?bg=none → transparent (OS decides).
+		if (q.get('bg') === 'dark') document.body.style.setProperty('background', '#15171b', 'important');
+		if (q.get('bg') === 'none') document.body.style.setProperty('background', 'transparent', 'important');
+		if (q.get('cookie') === '1') window.daCookie();
+		if (q.get('cookie') === 'late') setTimeout(window.daCookie, 1500);
+		if (q.get('wall') === '1') window.daWall();
+		if (q.get('menu') === '1') window.daMenu();
+	})();
+</script>
+<script>
+	(function () {
+		var s = new URLSearchParams(location.search).get('s') || 'ok';
+		var q2 = new URLSearchParams(location.search);
+		// §8.5 inline data. Teaser and pulse are opt-in on the dev page (?teaser=1, ?pulse=1) so other tests stay still.
+		window.SigmaWidget = {
+			root: location.origin + '/s/' + s + '/wp-json/sigma/v1/',
+			bot_name: s.startsWith('nobot') ? '' : 'Sigma', // ?s=nobot: no name set (the widget's default, Sigma)
+			bot_avatar_url: q2.get('av') === '1' ? '/avatars/remy.svg' : q2.get('av') === 'bad' ? '/avatars/missing.svg' : '', // §8.6 v1.12.1: empty = default inline SVG
+			teaser: { enabled: q2.get('teaser') === '1', text: s.startsWith('nobot') ? '' : q2.get('ttext') || '👋 Hi, this is Sigma. How can I help you?' },
+			pulse: q2.get('pulse') === '1',
+			voice_input: !s.startsWith('novoice')
+		};
+		// §8.8: ?icon=<assistant|remy|chat|sparkles|help|image> sets the bot's icon inline, like the plugin does.
+		if (q2.get('icon')) window.SigmaWidget.brand = { launcher_icon: q2.get('icon') };
+		// §19.3: ?lang=de prints a few translated strings, as the plugin does in a non-English site language.
+		if (q2.get('lang') === 'de') window.SigmaWidget.i18n = { 'Open help': 'Hilfe öffnen', 'Ask a question': 'Stellen Sie eine Frage', 'Talk to a human': 'Mit einem Menschen sprechen', 'Talk to %s': 'Mit %s sprechen', 'Back': 'Zurück' };
+		if (q2.get('icon') === 'image') window.SigmaWidget.bot_avatar_url = q2.get('av') === 'bad' ? '/avatars/missing.svg' : '/avatars/leo.svg';
+	})();
+</script>
+<script defer src="/build/widget/widget.js"></script>
+</body>
+</html>

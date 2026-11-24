@@ -1,0 +1,958 @@
+{
+ "settings": {
+  "enabled": true,
+  "admins_only": false,
+  "ai_enabled": true,
+  "human_enabled": true,
+  "provider": "mock",
+  "anthropic_model": "claude-haiku-5-5",
+  "openai_model": "gpt-6-luna",
+  "sources": [
+   "doc",
+   "integration"
+  ],
+  "context_budget": 90000,
+  "retrieval_budget": 25000,
+  "support_email": "support@example.com",
+  "brand_name": "Delta help",
+  "logo_url": "",
+  "color_light": "#26292a",
+  "color_dark": "#ede8dd",
+  "color_bg_light": "",
+  "color_bg_dark": "",
+  "color_text_light": "",
+  "color_text_dark": "",
+  "launcher_icon": "image",
+  "scheme": "auto",
+  "position": "right",
+  "offset_x": 24,
+  "offset_y": 24,
+  "font": "inherit",
+  "greeting": "",
+  "intro": "Ask about Delta and get an answer from our docs, or leave a message for the team.",
+  "human_reply_text": "",
+  "privacy_text_ai": "",
+  "privacy_text_human": "",
+  "pricing_url": "https://example.com/pricing/",
+  "privacy_url": "",
+  "retention_days": 90,
+  "ip_source": "auto",
+  "team": [
+   3,
+   2,
+   1
+  ],
+  "team_avatars": true,
+  "bot_name": "Sigma",
+  "bot_avatar": 95,
+  "human_card_title": "",
+  "bot_card_title": "",
+  "bot_card_text": "",
+  "bot_intro": "",
+  "continue_card_title": "",
+  "continue_human_title": "",
+  "teaser_text": "",
+  "teaser_enabled": true,
+  "launcher_pulse": true,
+  "voice_input": true,
+  "mail_transport": "php",
+  "smtp_host": "",
+  "smtp_port": 587,
+  "smtp_encryption": "starttls",
+  "smtp_auth": false,
+  "smtp_username": "",
+  "mail_from_email": "support@example.com",
+  "mail_from_name": "Delta help",
+  "delete_on_uninstall": false,
+  "turnstile_enabled": false,
+  "turnstile_site_key": "",
+  "turnstile_appearance": "auto",
+  "anthropic_key": {
+   "set": false,
+   "source": "none",
+   "last4": ""
+  },
+  "openai_key": {
+   "set": false,
+   "source": "none",
+   "last4": ""
+  },
+  "turnstile_secret": {
+   "set": false,
+   "source": "none",
+   "last4": ""
+  },
+  "support_email_effective": "support@example.com",
+  "killed_by_constant": false,
+  "mock_allowed": true,
+  "text_defaults": {
+   "greeting": "Hi. How can we help?",
+   "intro": "Ask a question and get an answer from our docs, or leave a message for the team.",
+   "human_reply_text": "We reply by email",
+   "privacy_text_ai": "{bot_name}'s answers come from our docs and collective knowledge of {product}. Chats are stored for {days} days for better user experience.",
+   "privacy_text_human": "We use your name and email only to reply. Chats are stored for {days} days.",
+   "teaser_text": "👋 Hi, this is {bot_name}. How can I help you?",
+   "human_card_title": "Talk to a human",
+   "bot_card_title": "Talk to {bot_name}",
+   "bot_card_text": "Handles instant support",
+   "bot_intro": "Hi, I'm {bot_name}. Ask me anything about {product} and I'll answer from our docs.",
+   "continue_card_title": "Continue with {bot_name}",
+   "continue_human_title": "Continue with the team"
+  },
+  "models": {
+   "anthropic": [
+    {
+     "id": "claude-haiku-5-5",
+     "label": "Claude Haiku 5.5: fast, lowest cost",
+     "default": true
+    },
+    {
+     "id": "claude-sonnet-5-5",
+     "label": "Claude Sonnet 5.5: balanced",
+     "default": false
+    },
+    {
+     "id": "claude-opus-5-5",
+     "label": "Claude Opus 5.5: most capable",
+     "default": false
+    }
+   ],
+   "openai": [
+    {
+     "id": "gpt-6-luna",
+     "label": "GPT-6 Luna: fast, lowest cost",
+     "default": true
+    },
+    {
+     "id": "gpt-6.1-terra",
+     "label": "GPT-6.1 Terra: fast, efficient",
+     "default": false
+    },
+    {
+     "id": "gpt-6.2-sol",
+     "label": "GPT-6.2 Sol: balanced",
+     "default": false
+    },
+    {
+     "id": "gpt-6.2-astra",
+     "label": "GPT-6.2 Astra: most capable",
+     "default": false
+    }
+   ]
+  },
+  "smtp_password": {
+   "set": false,
+   "source": "none"
+  },
+  "mail_warnings": []
+ },
+ "post_types": [
+  {
+   "name": "post",
+   "label": "Posts",
+   "published": 1
+  },
+  {
+   "name": "page",
+   "label": "Pages",
+   "published": 4
+  },
+  {
+   "name": "doc",
+   "label": "Docs",
+   "published": 52
+  },
+  {
+   "name": "integration",
+   "label": "Integrations",
+   "published": 28
+  }
+ ],
+ "usage": {
+  "this": {
+   "month": "2026-11",
+   "calls": 1778,
+   "cost": 6.9007
+  },
+  "last": {
+   "month": "2026-10",
+   "calls": 0,
+   "cost": 0
+  }
+ },
+ "corpus": {
+  "hash": "4cc09bd084d314892e19884ef1e2343548298dac8e4657cb58eabcc021227da0",
+  "built_at": "2026-11-23 04:48:37",
+  "sources": [
+   "doc",
+   "integration"
+  ],
+  "knowledge": [
+   {
+    "id": 96,
+    "title": "Demo: Licence prices",
+    "chars": 203
+   },
+   {
+    "id": 97,
+    "title": "Demo: Refund policy",
+    "chars": 186
+   },
+   {
+    "id": 98,
+    "title": "Demo: Support hours",
+    "chars": 149
+   }
+  ],
+  "knowledge_left": [],
+  "tokens": 102229,
+  "tokens_exact": null,
+  "tokens_model": "",
+  "tokens_error": "",
+  "docs": [
+   {
+    "id": 13,
+    "type": "doc",
+    "url": "https://example.com/docs/import-export/",
+    "title": "Import & Export",
+    "updated": "2026-11-18",
+    "chars": 4434
+   },
+   {
+    "id": 14,
+    "type": "doc",
+    "url": "https://example.com/docs/snippets/",
+    "title": "Snippets",
+    "updated": "2026-11-18",
+    "chars": 6431
+   },
+   {
+    "id": 15,
+    "type": "doc",
+    "url": "https://example.com/docs/delta-plugin/",
+    "title": "Delta Plugin",
+    "updated": "2026-11-18",
+    "chars": 3362
+   },
+   {
+    "id": 16,
+    "type": "doc",
+    "url": "https://example.com/docs/seed-design-system-versions/",
+    "title": "How Seed design system upgrades work",
+    "updated": "2026-11-13",
+    "chars": 3442
+   },
+   {
+    "id": 17,
+    "type": "doc",
+    "url": "https://example.com/docs/developer-hooks/",
+    "title": "Developer hooks",
+    "updated": "2026-11-06",
+    "chars": 28324
+   },
+   {
+    "id": 18,
+    "type": "doc",
+    "url": "https://example.com/docs/child-theme/",
+    "title": "Child theme",
+    "updated": "2026-11-01",
+    "chars": 3949
+   },
+   {
+    "id": 19,
+    "type": "doc",
+    "url": "https://example.com/docs/connect-claude-desktop/",
+    "title": "Connect Claude Desktop to WordPress with Delta’s MCP server",
+    "updated": "2026-10-31",
+    "chars": 4436
+   },
+   {
+    "id": 20,
+    "type": "doc",
+    "url": "https://example.com/docs/connect-cursor/",
+    "title": "Connect Cursor to WordPress with Delta’s MCP server",
+    "updated": "2026-10-31",
+    "chars": 3956
+   },
+   {
+    "id": 21,
+    "type": "doc",
+    "url": "https://example.com/docs/connect-claude-code/",
+    "title": "Connect Claude Code to WordPress with Delta’s MCP server",
+    "updated": "2026-10-31",
+    "chars": 3884
+   },
+   {
+    "id": 22,
+    "type": "doc",
+    "url": "https://example.com/docs/changed-by-an-agent-panel/",
+    "title": "Changed by an agent panel",
+    "updated": "2026-10-30",
+    "chars": 1777
+   },
+   {
+    "id": 23,
+    "type": "doc",
+    "url": "https://example.com/docs/approvals/",
+    "title": "Approvals",
+    "updated": "2026-10-30",
+    "chars": 5880
+   },
+   {
+    "id": 24,
+    "type": "doc",
+    "url": "https://example.com/docs/static-export/",
+    "title": "Static export",
+    "updated": "2026-10-24",
+    "chars": 3977
+   },
+   {
+    "id": 25,
+    "type": "doc",
+    "url": "https://example.com/docs/redirects/",
+    "title": "Redirects",
+    "updated": "2026-10-24",
+    "chars": 3287
+   },
+   {
+    "id": 26,
+    "type": "doc",
+    "url": "https://example.com/docs/seo/",
+    "title": "SEO",
+    "updated": "2026-10-24",
+    "chars": 4870
+   },
+   {
+    "id": 27,
+    "type": "doc",
+    "url": "https://example.com/docs/multisite/",
+    "title": "Multisite networks",
+    "updated": "2026-10-13",
+    "chars": 2128
+   },
+   {
+    "id": 28,
+    "type": "doc",
+    "url": "https://example.com/docs/sketchbook/",
+    "title": "Sketchbook",
+    "updated": "2026-10-10",
+    "chars": 5584
+   },
+   {
+    "id": 29,
+    "type": "doc",
+    "url": "https://example.com/docs/front-panel/",
+    "title": "Front panel",
+    "updated": "2026-10-10",
+    "chars": 6561
+   },
+   {
+    "id": 30,
+    "type": "doc",
+    "url": "https://example.com/docs/security/",
+    "title": "Security",
+    "updated": "2026-09-19",
+    "chars": 8023
+   },
+   {
+    "id": 31,
+    "type": "doc",
+    "url": "https://example.com/docs/use-your-own-design-system/",
+    "title": "Use your own design system",
+    "updated": "2026-09-16",
+    "chars": 7723
+   },
+   {
+    "id": 32,
+    "type": "doc",
+    "url": "https://example.com/docs/memory/",
+    "title": "Memory",
+    "updated": "2026-09-05",
+    "chars": 6853
+   },
+   {
+    "id": 33,
+    "type": "doc",
+    "url": "https://example.com/docs/content-types/",
+    "title": "Content types",
+    "updated": "2026-09-05",
+    "chars": 7375
+   },
+   {
+    "id": 34,
+    "type": "doc",
+    "url": "https://example.com/docs/agent-routing/",
+    "title": "Agent routing",
+    "updated": "2026-08-31",
+    "chars": 6191
+   },
+   {
+    "id": 35,
+    "type": "doc",
+    "url": "https://example.com/docs/page-is-broken/",
+    "title": "Page is broken",
+    "updated": "2026-08-28",
+    "chars": 2581
+   },
+   {
+    "id": 36,
+    "type": "doc",
+    "url": "https://example.com/docs/when-an-ability-fails/",
+    "title": "An ability fails",
+    "updated": "2026-08-28",
+    "chars": 2677
+   },
+   {
+    "id": 37,
+    "type": "doc",
+    "url": "https://example.com/docs/starting-a-build/",
+    "title": "Starting a build",
+    "updated": "2026-08-28",
+    "chars": 2239
+   },
+   {
+    "id": 38,
+    "type": "doc",
+    "url": "https://example.com/docs/licensing-and-updates/",
+    "title": "Licensing and updates",
+    "updated": "2026-08-28",
+    "chars": 2350
+   },
+   {
+    "id": 39,
+    "type": "doc",
+    "url": "https://example.com/docs/the-editors/",
+    "title": "The editors",
+    "updated": "2026-08-28",
+    "chars": 2309
+   },
+   {
+    "id": 40,
+    "type": "doc",
+    "url": "https://example.com/docs/features/",
+    "title": "Features",
+    "updated": "2026-08-28",
+    "chars": 7679
+   },
+   {
+    "id": 41,
+    "type": "doc",
+    "url": "https://example.com/docs/woocommerce/",
+    "title": "WooCommerce",
+    "updated": "2026-08-28",
+    "chars": 5209
+   },
+   {
+    "id": 42,
+    "type": "doc",
+    "url": "https://example.com/docs/supported-integrations/",
+    "title": "Supported integrations",
+    "updated": "2026-08-28",
+    "chars": 6286
+   },
+   {
+    "id": 43,
+    "type": "doc",
+    "url": "https://example.com/docs/how-integrations-work/",
+    "title": "What integrations are",
+    "updated": "2026-08-28",
+    "chars": 3359
+   },
+   {
+    "id": 44,
+    "type": "doc",
+    "url": "https://example.com/docs/skills-rules-and-guardrails/",
+    "title": "Skills, rules, and guardrails",
+    "updated": "2026-08-28",
+    "chars": 5325
+   },
+   {
+    "id": 45,
+    "type": "doc",
+    "url": "https://example.com/docs/tools-and-abilities/",
+    "title": "Tools and abilities",
+    "updated": "2026-08-28",
+    "chars": 2577
+   },
+   {
+    "id": 46,
+    "type": "doc",
+    "url": "https://example.com/docs/recipe-blog-or-custom-post-type/",
+    "title": "Recipe: a blog or a custom post type",
+    "updated": "2026-08-28",
+    "chars": 2648
+   },
+   {
+    "id": 47,
+    "type": "doc",
+    "url": "https://example.com/docs/display-conditions-and-special-pages/",
+    "title": "Display conditions and special pages",
+    "updated": "2026-08-28",
+    "chars": 4914
+   },
+   {
+    "id": 48,
+    "type": "doc",
+    "url": "https://example.com/docs/template-types-and-includes/",
+    "title": "Template types and includes",
+    "updated": "2026-08-28",
+    "chars": 4427
+   },
+   {
+    "id": 49,
+    "type": "doc",
+    "url": "https://example.com/docs/snapshots-and-restore/",
+    "title": "Snapshots and restore",
+    "updated": "2026-08-28",
+    "chars": 6734
+   },
+   {
+    "id": 50,
+    "type": "doc",
+    "url": "https://example.com/docs/icons-manager/",
+    "title": "Icons Manager",
+    "updated": "2026-08-28",
+    "chars": 1986
+   },
+   {
+    "id": 51,
+    "type": "doc",
+    "url": "https://example.com/docs/fonts-manager/",
+    "title": "Fonts Manager",
+    "updated": "2026-08-28",
+    "chars": 1844
+   },
+   {
+    "id": 52,
+    "type": "doc",
+    "url": "https://example.com/docs/components/",
+    "title": "Components",
+    "updated": "2026-08-28",
+    "chars": 4330
+   },
+   {
+    "id": 53,
+    "type": "doc",
+    "url": "https://example.com/docs/design-system/",
+    "title": "Design system",
+    "updated": "2026-08-28",
+    "chars": 7684
+   },
+   {
+    "id": 54,
+    "type": "doc",
+    "url": "https://example.com/docs/menus-media-and-shortcodes/",
+    "title": "Menus, media, and shortcodes",
+    "updated": "2026-08-28",
+    "chars": 2966
+   },
+   {
+    "id": 55,
+    "type": "doc",
+    "url": "https://example.com/docs/field-maps/",
+    "title": "Field maps",
+    "updated": "2026-08-28",
+    "chars": 6782
+   },
+   {
+    "id": 56,
+    "type": "doc",
+    "url": "https://example.com/docs/loops-and-pagination/",
+    "title": "Loops and pagination",
+    "updated": "2026-08-28",
+    "chars": 3481
+   },
+   {
+    "id": 57,
+    "type": "doc",
+    "url": "https://example.com/docs/dynamic-placeholders/",
+    "title": "Placeholders",
+    "updated": "2026-08-28",
+    "chars": 2858
+   },
+   {
+    "id": 58,
+    "type": "doc",
+    "url": "https://example.com/docs/pages-posts-and-entries/",
+    "title": "Pages, posts, and entries",
+    "updated": "2026-08-28",
+    "chars": 5601
+   },
+   {
+    "id": 59,
+    "type": "doc",
+    "url": "https://example.com/docs/delta-admin-tour/",
+    "title": "The Delta admin tour",
+    "updated": "2026-08-28",
+    "chars": 4448
+   },
+   {
+    "id": 60,
+    "type": "doc",
+    "url": "https://example.com/docs/install-and-activate/",
+    "title": "Install and activate",
+    "updated": "2026-08-28",
+    "chars": 881
+   },
+   {
+    "id": 61,
+    "type": "doc",
+    "url": "https://example.com/docs/what-is-delta/",
+    "title": "What Delta is",
+    "updated": "2026-08-28",
+    "chars": 1087
+   },
+   {
+    "id": 62,
+    "type": "doc",
+    "url": "https://example.com/docs/build-your-first-page/",
+    "title": "Set up your site",
+    "updated": "2026-08-26",
+    "chars": 3174
+   },
+   {
+    "id": 63,
+    "type": "doc",
+    "url": "https://example.com/docs/primitive-tokens/",
+    "title": "Primitive tokens",
+    "updated": "2026-08-26",
+    "chars": 5458
+   },
+   {
+    "id": 64,
+    "type": "doc",
+    "url": "https://example.com/docs/connect-an-agent/",
+    "title": "Connect an agent",
+    "updated": "2026-08-26",
+    "chars": 3074
+   },
+   {
+    "id": 65,
+    "type": "integration",
+    "url": "https://example.com/integrations/search-filter/",
+    "title": "Search & Filter",
+    "updated": "2026-11-12",
+    "chars": 1042
+   },
+   {
+    "id": 66,
+    "type": "integration",
+    "url": "https://example.com/integrations/litespeed-cache/",
+    "title": "LiteSpeed Cache",
+    "updated": "2026-11-12",
+    "chars": 708
+   },
+   {
+    "id": 67,
+    "type": "integration",
+    "url": "https://example.com/integrations/yoast-seo/",
+    "title": "Yoast SEO",
+    "updated": "2026-11-12",
+    "chars": 719
+   },
+   {
+    "id": 68,
+    "type": "integration",
+    "url": "https://example.com/integrations/tutor-lms/",
+    "title": "Tutor LMS",
+    "updated": "2026-11-12",
+    "chars": 1768
+   },
+   {
+    "id": 69,
+    "type": "integration",
+    "url": "https://example.com/integrations/all-in-one-seo/",
+    "title": "All in One SEO",
+    "updated": "2026-11-06",
+    "chars": 1312
+   },
+   {
+    "id": 70,
+    "type": "integration",
+    "url": "https://example.com/integrations/rank-math/",
+    "title": "Rank Math",
+    "updated": "2026-11-06",
+    "chars": 1251
+   },
+   {
+    "id": 71,
+    "type": "integration",
+    "url": "https://example.com/integrations/lifterlms/",
+    "title": "LifterLMS",
+    "updated": "2026-11-06",
+    "chars": 1654
+   },
+   {
+    "id": 72,
+    "type": "integration",
+    "url": "https://example.com/integrations/memberpress/",
+    "title": "MemberPress",
+    "updated": "2026-11-06",
+    "chars": 2564
+   },
+   {
+    "id": 73,
+    "type": "integration",
+    "url": "https://example.com/integrations/simply-static/",
+    "title": "Simply Static",
+    "updated": "2026-10-24",
+    "chars": 1082
+   },
+   {
+    "id": 74,
+    "type": "integration",
+    "url": "https://example.com/integrations/redirection/",
+    "title": "Redirection",
+    "updated": "2026-10-24",
+    "chars": 1053
+   },
+   {
+    "id": 75,
+    "type": "integration",
+    "url": "https://example.com/integrations/seopress/",
+    "title": "SEOPress",
+    "updated": "2026-10-24",
+    "chars": 1274
+   },
+   {
+    "id": 76,
+    "type": "integration",
+    "url": "https://example.com/integrations/surerank/",
+    "title": "SureRank",
+    "updated": "2026-10-24",
+    "chars": 1113
+   },
+   {
+    "id": 77,
+    "type": "integration",
+    "url": "https://example.com/integrations/ws-form/",
+    "title": "WS Form",
+    "updated": "2026-10-24",
+    "chars": 1016
+   },
+   {
+    "id": 78,
+    "type": "integration",
+    "url": "https://example.com/integrations/jetengine/",
+    "title": "JetEngine",
+    "updated": "2026-10-24",
+    "chars": 911
+   },
+   {
+    "id": 79,
+    "type": "integration",
+    "url": "https://example.com/integrations/schemawp/",
+    "title": "SchemaWP",
+    "updated": "2026-10-05",
+    "chars": 1030
+   },
+   {
+    "id": 80,
+    "type": "integration",
+    "url": "https://example.com/integrations/automatic-css/",
+    "title": "Automatic.css",
+    "updated": "2026-10-05",
+    "chars": 911
+   },
+   {
+    "id": 81,
+    "type": "integration",
+    "url": "https://example.com/integrations/pods/",
+    "title": "Pods",
+    "updated": "2026-08-28",
+    "chars": 416
+   },
+   {
+    "id": 82,
+    "type": "integration",
+    "url": "https://example.com/integrations/secure-custom-fields/",
+    "title": "Secure Custom Fields",
+    "updated": "2026-08-28",
+    "chars": 483
+   },
+   {
+    "id": 83,
+    "type": "integration",
+    "url": "https://example.com/integrations/meta-box/",
+    "title": "Meta Box",
+    "updated": "2026-08-28",
+    "chars": 480
+   },
+   {
+    "id": 84,
+    "type": "integration",
+    "url": "https://example.com/integrations/custom-post-type-ui/",
+    "title": "Custom Post Type UI",
+    "updated": "2026-08-28",
+    "chars": 440
+   },
+   {
+    "id": 85,
+    "type": "integration",
+    "url": "https://example.com/integrations/advanced-custom-fields/",
+    "title": "Advanced Custom Fields",
+    "updated": "2026-08-28",
+    "chars": 683
+   },
+   {
+    "id": 86,
+    "type": "integration",
+    "url": "https://example.com/integrations/ninja-forms/",
+    "title": "Ninja Forms",
+    "updated": "2026-08-28",
+    "chars": 406
+   },
+   {
+    "id": 87,
+    "type": "integration",
+    "url": "https://example.com/integrations/forminator/",
+    "title": "Forminator",
+    "updated": "2026-08-28",
+    "chars": 491
+   },
+   {
+    "id": 88,
+    "type": "integration",
+    "url": "https://example.com/integrations/fluent-forms/",
+    "title": "Fluent Forms",
+    "updated": "2026-08-28",
+    "chars": 411
+   },
+   {
+    "id": 89,
+    "type": "integration",
+    "url": "https://example.com/integrations/gravity-forms/",
+    "title": "Gravity Forms",
+    "updated": "2026-08-28",
+    "chars": 496
+   },
+   {
+    "id": 90,
+    "type": "integration",
+    "url": "https://example.com/integrations/wpforms/",
+    "title": "WPForms",
+    "updated": "2026-08-28",
+    "chars": 926
+   },
+   {
+    "id": 91,
+    "type": "integration",
+    "url": "https://example.com/integrations/contact-form-7/",
+    "title": "Contact Form 7",
+    "updated": "2026-08-28",
+    "chars": 642
+   },
+   {
+    "id": 92,
+    "type": "integration",
+    "url": "https://example.com/integrations/woocommerce/",
+    "title": "WooCommerce",
+    "updated": "2026-08-28",
+    "chars": 747
+   }
+  ],
+  "mode": "retrieval",
+  "prefix_tokens_exact": null,
+  "built": true,
+  "context_budget": 90000,
+  "over_budget": true,
+  "budget_tokens": 105229,
+  "rebuild_pending": false
+ },
+ "cloudflare": {
+  "source": "bundled",
+  "count": 22,
+  "fetched_at": "2026-11-20",
+  "age_days": 3,
+  "stale": false,
+  "behind": false
+ },
+ "team": [
+  {
+   "id": 3,
+   "name": "Raj",
+   "chat_name": "Raj",
+   "role": "Editor",
+   "avatar": "",
+   "avatar_copy": "",
+   "avatar_source": "gravatar",
+   "avatar_status": {
+    "source": "gravatar",
+    "result": "no_picture",
+    "reason": "http_404",
+    "detail": "",
+    "at": 1795409315
+   },
+   "avatar_message": "No Gravatar (404): the widget shows initials."
+  },
+  {
+   "id": 2,
+   "name": "Maya",
+   "chat_name": "Maya",
+   "role": "Author",
+   "avatar": "",
+   "avatar_copy": "",
+   "avatar_source": "chat",
+   "avatar_status": {
+    "source": "chat",
+    "result": "unchanged",
+    "reason": "",
+    "detail": "",
+    "at": 1795409315
+   },
+   "avatar_message": "Up to date: the chat avatar has not changed."
+  },
+  {
+   "id": 1,
+   "name": "admin",
+   "chat_name": "Support",
+   "role": "Administrator",
+   "avatar": "",
+   "avatar_copy": "",
+   "avatar_source": "gravatar",
+   "avatar_status": {
+    "source": "gravatar",
+    "result": "no_picture",
+    "reason": "http_404",
+    "detail": "",
+    "at": 1795409315
+   },
+   "avatar_message": "No Gravatar (404): the widget shows initials."
+  }
+ ],
+ "bot_avatar": {
+  "url": "https://example.com/wp-content/uploads/delta-assistant/avatars/cjvhcih7fvjgzyejq643.webp",
+  "default": false,
+  "default_url": "http://example.com:8453/wp-content/plugins/sigma/assets/remy-avatar.svg",
+  "preview": "https://example.com/wp-content/uploads/2026/11/remy-test-face-150x150.png",
+  "status": {
+   "source": "media",
+   "result": "unchanged",
+   "reason": "",
+   "detail": "",
+   "at": 1795409315
+  },
+  "message": "Up to date: the chosen image has not changed."
+ },
+ "remy_icons": {
+  "assistant": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTIiIGZpbGw9IiMyNjI5MmEiLz48ZyB0cmFuc2Zvcm09InNjYWxlKDAuNzUpIj48cGF0aCBkPSJNMTUuNzUgOC4xN2EyLjE5IDIuMTkgMCAwIDEgMi4xOSAyLjE5djUuOThhMi4xOSAyLjE5IDAgMCAxLTQuMzkgMHYtNS45OGEyLjE5IDIuMTkgMCAwIDEgMi4xOS0yLjE5ek0yMy41MyA4LjE3YTIuMTkgMi4xOSAwIDAgMSAyLjE5IDIuMTl2NS45OGEyLjE5IDIuMTkgMCAwIDEtNC4zOSAwdi01Ljk4YTIuMTkgMi4xOSAwIDAgMSAyLjE5LTIuMTl6IiBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L2c+PC9zdmc+",
+  "remy": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTIiIGZpbGw9IiMyNjI5MmEiLz48ZyB0cmFuc2Zvcm09InNjYWxlKC4yNSkiPjxnIHRyYW5zZm9ybT0ibWF0cml4KDEuMTIgMCAwIDEuMTIgLTUuNzYgLTQuOCkiPjxwYXRoIGQ9Ik0zNiAyM2gyNGExNCAxNCAwIDAgMSAxNCAxNHYxMmExNCAxNCAwIDAgMS0xNCAxNEg0NGwtMTMgMTAgMi0xMS41QTE0IDE0IDAgMCAxIDIyIDQ5VjM3YTE0IDE0IDAgMCAxIDE0LTE0eiIgZmlsbD0iI2ZmZmZmZiIvPjxwYXRoIGQ9Ik00MC41IDM5VjQ2IiBzdHJva2U9IiMyNjI5MmEiIHN0cm9rZS13aWR0aD0iOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTU1LjUgMzlWNDYiIHN0cm9rZT0iIzI2MjkyYSIgc3Ryb2tlLXdpZHRoPSI5IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L2c+PC9nPjwvc3ZnPg==",
+  "chat": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTIiIGZpbGw9IiMyNjI5MmEiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0LjUgNC41KSBzY2FsZSgwLjYyNSkiPjxwYXRoIGQ9Ik00IDYuNUEyLjUgMi41IDAgMCAxIDYuNSA0aDExQTIuNSAyLjUgMCAwIDEgMjAgNi41djhhMi41IDIuNSAwIDAgMS0yLjUgMi41SDEwLjVMNiAyMC41VjE3aC41QTIuNSAyLjUgMCAwIDEgNCAxNC41eiIgZmlsbC1vcGFjaXR5PSIwIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMi43MiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9nPjwvc3ZnPg==",
+  "sparkles": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTIiIGZpbGw9IiMyNjI5MmEiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0LjUgNC41KSBzY2FsZSgwLjYyNSkiPjxwYXRoIGQ9Ik0xNiAxOGEyIDIgMCAwIDEgMiAyYTIgMiAwIDAgMSAyLTJhMiAyIDAgMCAxLTItMmEyIDIgMCAwIDEtMiAybTAtMTJhMiAyIDAgMCAxIDIgMmEyIDIgMCAwIDEgMi0yYTIgMiAwIDAgMS0yLTJhMiAyIDAgMCAxLTIgMk05IDE4YTYgNiAwIDAgMSA2LTZhNiA2IDAgMCAxLTYtNmE2IDYgMCAwIDEtNiA2YTYgNiAwIDAgMSA2IDYiIGZpbGwtb3BhY2l0eT0iMCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIuNzIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvZz48L3N2Zz4=",
+  "help": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTIiIGZpbGw9IiMyNjI5MmEiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0LjUgNC41KSBzY2FsZSgwLjYyNSkiPjxwYXRoIGQ9Ik0zIDEyYTkgOSAwIDEgMCAxOCAwYTkgOSAwIDAgMC0xOCAwbTkgNHYuMDFNMTIgMTNhMiAyIDAgMCAwIC45MTQtMy43ODJhMS45OCAxLjk4IDAgMCAwLTIuNDE0LjQ4MyIgZmlsbC1vcGFjaXR5PSIwIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMi43MiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9nPjwvc3ZnPg=="
+ },
+ "knowledge": {
+  "active": 3,
+  "draft": 2,
+  "active_words": 93
+ },
+ "mail": {
+  "last_success_at": "2026-11-21 17:29:47",
+  "last_error": "",
+  "last_error_at": "",
+  "consecutive_failures": 0,
+  "failed_handoffs": 0
+ },
+ "ai_status": "",
+ "killed": false
+}

@@ -1,0 +1,49 @@
+{
+	"name": "sigma",
+	"version": "0.2.5",
+	"private": true,
+	"description": "Sigma: a chat box with AI answers from your own docs and knowledge base, and an email handoff.",
+	"license": "GPL-2.0-or-later",
+	"type": "module",
+	"scripts": {
+		"build": "npm run build:admin && npm run build:widget && node scripts/make-pot.mjs --if-available && node scripts/build-version.mjs",
+		"build:admin": "tsc --noEmit -p apps/admin/tsconfig.json && vite build --config apps/admin/vite.config.ts",
+		"build:widget": "node scripts/widget-strings.mjs && node scripts/build-widget.mjs",
+		"watch:admin": "vite build --watch --config apps/admin/vite.config.ts",
+		"package": "npm run build && bash scripts/zip.sh",
+		"zip": "npm run package",
+		"release": "bash scripts/release.sh",
+		"lint:php": "phpcs --standard=phpcs.xml.dist",
+		"test": "npm run test:unit",
+		"test:setup": "composer --working-dir=tests install --no-interaction --no-progress",
+		"test:unit": "node tests/bin/ensure-setup.mjs && tests/vendor/bin/phpunit -c tests/phpunit.unit.xml",
+		"test:int": "node tests/bin/ensure-setup.mjs && node tests/bin/int.mjs",
+		"test:int:local": "node tests/bin/ensure-setup.mjs && node tests/bin/int-local.mjs",
+		"test:env": "wp-env --config=tests/env/wp-env.json",
+		"evals": "node tests/evals/run.mjs",
+		"audit": "node scripts/audit.mjs",
+		"i18n:pot": "node scripts/make-pot.mjs",
+		"i18n:check": "node scripts/widget-strings.mjs --check"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.65.1",
+		"@types/react": "18.3.31",
+		"@wordpress/api-fetch": "8.2.0",
+		"@wordpress/element": "10.2.0",
+		"@wordpress/env": "12.2.0",
+		"@wordpress/i18n": "7.2.0",
+		"esbuild": "^0.28.2",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"typescript": "7.0.2",
+		"vite": "8.3.8"
+	},
+	"overrides": {
+		"@wordpress/env": {
+			"glob": "^14.0.2",
+			"minimatch": "^11.0.1",
+			"isomorphic-git": "^1.38.6",
+			"qs": "^6.16.1"
+		}
+	}
+}

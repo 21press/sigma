@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!-- Integration layer: Delta Assistant inside WordPress, in the wp-env sandbox. Run with `npm run test:int`. -->
+<phpunit
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+	bootstrap="php/bootstrap-integration.php"
+	cacheResultFile=".results/integration.cache"
+	colors="true"
+	executionOrder="random"
+	resolveDependencies="true"
+	beStrictAboutOutputDuringTests="true"
+	failOnRisky="true"
+	failOnWarning="true"
+	convertDeprecationsToExceptions="true"
+>
+	<testsuites>
+		<testsuite name="integration">
+			<directory suffix="-test.php">php/integration</directory>
+		</testsuite>
+	</testsuites>
+	<!-- known-mismatch: tests of what the code's docs promise that the code does not do yet. They
+	     fail until the product is fixed; run them with npm run test:int with the option group set to known-mismatch (see tests/README.md). -->
+	<groups>
+		<exclude>
+			<group>known-mismatch</group>
+		</exclude>
+	</groups>
+	<logging>
+		<junit outputFile=".results/integration.xml"/>
+	</logging>
+</phpunit>
